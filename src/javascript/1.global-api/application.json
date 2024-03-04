@@ -1,0 +1,60 @@
+{
+	"Vue: createApp()": {
+		"prefix": "createApp",
+		"body": [
+			"import { createApp } from 'vue';",
+			"import App from './App.vue';",
+			"",
+			"const app = createApp(App);",
+			"",
+			"app.mount('${1:Element/#Selector}');",
+			""
+		],
+		"description": "Creates an application instance.\nfunction createApp(rootComponent: Component, rootProps?: object): App\n"
+	},
+	"Vue: app.mount()": {
+		"prefix": "app-mount()",
+		"body": ["app.mount('${1:Element/#Selector}');"],
+		"description": "Mounts the application instance in a container element.\n"
+	},
+	"Vue: app.unmount()": {
+		"prefix": "app-unmount()",
+		"body": ["app.unmount('${1:Element/#Selector}');"],
+		"description": "Unmounts a mounted application instance, triggering the unmount lifecycle hooks for all components in the application's component tree.\n"
+	},
+	"Vue: app.component()": {
+		"prefix": "app-component",
+		"body": [
+			"app.component('${1:feature}', ${2:Feature});"
+		],
+		"description": "Registers a global component.\n"
+	},
+	"Vue: app.directive()": {
+		"prefix": "app-directive",
+		"body": [
+			"app.directive('${1:feature}', ${2:feature});"
+		],
+		"description": "Registers a global custom directive.\n"
+	},
+	"Vue: app.directive(), Shorthand": {
+		"prefix": [
+			"app-directive-shorthand",
+			"gd"
+		],
+		"body": [
+			"app.directive('${1:feature}', (el, binding, vnode, prevVNode) => {",
+			"  ${3:// `mounted`, `updated`}",
+			"  $0",
+			"});"
+		]
+	},
+	"Vue: app.runWithContext()": {
+		"prefix": "app-runWithContext",
+		"body": [
+			"const injected = app.runWithContext(() => {",
+			"  return inject('${1:key}');",
+			"});"
+		],
+		"description": "Execute a callback with the current app as injection context.\n"
+	}
+}

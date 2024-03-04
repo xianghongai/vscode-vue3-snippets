@@ -1,0 +1,25 @@
+{
+	"Vue: import vue-router": {
+		"prefix": "import-vue-router",
+		"body": [
+			"import { createRouter, createWebHistory } from 'vue-router';$0"
+		],
+		"description": "import Vue Router\n"
+	},
+	"Vue: createRouter()": {
+		"prefix": "createRouter",
+		"body": [
+			"${1:import { createRouter, createWebHistory \\} from 'vue-router';}",
+			"",
+			"const ${2:router} = createRouter({",
+			"  history: createWebHistory(),",
+			"  ${3:routes},",
+			"});$0",
+			"",
+			"// ${5:app.use(${2:router});}",
+			"export default ${2:router};",
+			""
+		],
+		"description": "Creates a Router instance that can be used by a Vue app.\n\nThe Full Navigation Resolution Flow:\n\n 1. Navigation triggered.\n 2. Call `beforeRouteLeave` guards in deactivated components.\n 3. Call global `beforeEach` guards.\n 4. Call `beforeRouteUpdate` guards in reused components.\n 5. Call `beforeEnter` in route configs.\n 6. Resolve async route components.\n 7. Call `beforeRouteEnter` in activated components.\n 8. Call global `beforeResolve` guards.\n 9. Navigation is confirmed.\n 10. Call global `afterEach` hooks.\n 11. DOM updates triggered.\n 12. Call callbacks passed to `next` in `beforeRouteEnter` guards with instantiated instances.\n"
+	}
+}

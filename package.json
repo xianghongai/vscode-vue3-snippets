@@ -1,0 +1,123 @@
+{
+	"name": "vscode-vue3-snippets",
+	"publisher": "NicholasHsiang",
+	"displayName": "Vue 3 Snippets",
+	"description": "Code snippets for Vue 3 (Only Vue 3.x, Vue Router 4.x)",
+	"icon": "art/icon.png",
+	"version": "1.0.0",
+	"type": "module",
+	"galleryBanner": {
+		"color": "#ffffff",
+		"theme": "dark"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/xianghongai/vscode-vue3-snippets/issues"
+	},
+	"homepage": "https://github.com/xianghongai/vscode-vue3-snippets/",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/xianghongai/vscode-vue3-snippets/blob/master/README.md"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"scripts": {
+		"dev": "nodemon --watch src -e json -x 'yarn run prebuild'",
+		"prebuild": "node merge.js",
+		"build": "vsce package",
+		"prepublish": "npm run build",
+		"publish": "vsce publish"
+	},
+	"keywords": [
+		"Snippets",
+		"snippet",
+		"vue",
+		"vue router",
+		"vuex",
+		"vue 3",
+		"vue3",
+		"vue snippet",
+		"vue snippets",
+		"vue 3 snippet",
+		"vue 3 snippets",
+		"vue3 snippet",
+		"vue3 snippets",
+		"vue 3 code snippets",
+		"vue3 code snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/css.json"
+			},
+			{
+				"language": "less",
+				"path": "./snippets/css.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"glob": "^10.3.10",
+		"nodemon": "^3.1.0"
+	},
+	"peerDependencies": {
+		"@vscode/vsce": "^2.24.0"
+	}
+}

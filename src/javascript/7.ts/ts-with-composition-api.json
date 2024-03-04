@@ -1,0 +1,98 @@
+{
+	"Vue: defineProps (Typing)": {
+		"prefix": [
+			"defineProps-type"
+		],
+		"body": [
+			"const props = defineProps<{",
+			"  ${1:property}: ${2:type}$0",
+			"}>();"
+		],
+		"description": "Typing Component Props.\n"
+	},
+	"Vue: defineEmits (Typing)": {
+		"prefix": [
+			"defineEmits-type"
+		],
+		"body": [
+			"const emit = defineEmits<{",
+			"  ${1:eventName}: [${2:param}: ${2:type}]$0",
+			"}>();"
+		],
+		"description": "Typing Component Emits.\n"
+	},
+	"Vue: defineModel (Typing)": {
+		"prefix": "defineModel-type",
+		"body": [
+			"const modelValue = defineModel<${1:type}>(${2});"
+		]
+	},
+	"Vue: defineModel (Modifiers and Transformers, Typing)": {
+		"prefix": "defineModel-type",
+		"body": [
+			"const [modelValue, modifiers] = defineModel<${1:type}, \"${2:modifier1}\" | \"${3:modifier2}\">(${4});$0"
+		],
+		"description": "defineModel"
+	},
+	"Vue: Typing ref()": {
+		"prefix": "ref-type",
+		"body": [
+			"const ${1:refName} = ref<${2:type}>(${3});$0"
+		],
+		"description": "Typing ref()"
+	},
+	"Vue: Typing reactive()": {
+		"prefix": "reactive-type",
+		"body": [
+			"interface ${2:Feature} {",
+			"  ${3:property}: ${4:type};",
+			"}",
+			"",
+			"const ${1:state}: ${2:Feature} = reactive({",
+			"  ${3:property}: ${5:value}",
+			"});"
+		],
+		"description": "Typing reactive()"
+	},
+	"Vue: Typing computed()": {
+		"prefix": "computed-type",
+		"body": [
+			"const ${1:computedName} = computed<${2:type}>(() => {",
+			"  return ${3:value};",
+			"});$0"
+		],
+		"description": "Typing computed()"
+	},
+	"Vue: Typing Event Handlers": {
+		"prefix": "event-type",
+		"body": [
+			"function ${1:handlerName}(event: ${2:Event}) {",
+			"  $3",
+			"};$0"
+		],
+		"description": "Typing Event Handlers"
+	},
+	"Vue: Typing Provide / Inject": {
+		"prefix": "provide-inject-type",
+		"body": [
+			"const ${2:key} = Symbol() as InjectionKey<string>",
+			"provide(${2:key}, ${3:value});",
+			"const ${4:injectName} = inject<${5:type}>(${2:key});$0"
+		],
+		"description": "Typing Provide / Inject"
+	},
+	"Vue: Typing Template Refs": {
+		"prefix": "refs-template-type",
+		"body": [
+			"const ${1:refName}Ref = ref<${2:HTMLElement | null}>(null);$0"
+		],
+		"description": "Typing Template Refs"
+	},
+	"Vue: Typing Component Template Refs": {
+		"prefix": "refs-component-template-type",
+		"body": [
+			"const ${1:refName}Ref = ref<${2:ComponentPublicInstance | null}>(null);$0"
+		],
+		"description": "Typing Component Template Refs"
+	}
+}

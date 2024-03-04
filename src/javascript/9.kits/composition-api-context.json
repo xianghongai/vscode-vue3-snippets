@@ -1,0 +1,22 @@
+{
+	"Vue: Context, Composition API": {
+		"prefix": "context",
+		"body": [
+			"import { provide, inject } from 'vue';",
+			"",
+			"export const ContextSymbol = Symbol('ContextSymbol');",
+			"",
+			"export function useProvideContext() {",
+			"  const context = {};",
+			"  provide(ContextSymbol, context);",
+			"  return context;",
+			"}",
+			"",
+			"export default function useContext() {",
+			"  const context = inject(ContextSymbol);",
+			"  return context;",
+			"}"
+		],
+		"description": "example: use-feature.js\n"
+	}
+}

@@ -1,0 +1,108 @@
+{
+	"Directive Hooks": {
+		"prefix": [
+			"vue-directive"
+		],
+		"body": [
+			"export default {",
+			"  ${2:created(el, binding, vnode) {$3\\},}",
+			"  ${4:beforeMount(el, binding, vnode, prevVNode) {$5\\},}",
+			"  ${6:mounted(el, binding, vnode, prevVNode) {$7\\},}",
+			"  ${8:beforeUpdate(el, binding, vnode, prevVNode) {$9\\},}",
+			"  ${10:updated(el, binding, vnode, prevVNode) {$11\\},}",
+			"  ${12:beforeUnmount(el, binding, vnode, prevVNode) {$13\\},}",
+			"  ${14:unmounted(el, binding, vnode, prevVNode) {$15\\},}",
+			"});$0"
+		],
+		"description": "A directive definition object can provide several hook functions (all optional).\n"
+	},
+	"Directive (locally), Shorthand, Options API": {
+		"prefix": [
+			"option-directives-property"
+		],
+		"body": [
+			"${1:id}: ${2:(el, binding) => {$3}},"
+		]
+	},
+	"Directive (locally), Composition API": {
+		"prefix": "directive",
+		"body": [
+			"const v${1:NameOfDirective} = {",
+			"  beforeMount: (el) => {",
+			"\t$2",
+			"  },",
+			"};"
+		],
+		"description": "Registered with `<script setup>`.\nMust follow the naming scheme `vNameOfDirective`.\n"
+	},
+	"Directive: created()": {
+		"prefix": [
+			"directive-created"
+		],
+		"body": [
+			"created (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: beforeMount()": {
+		"prefix": [
+			"directive-beforeMount"
+		],
+		"body": [
+			"beforeMount (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: mounted()": {
+		"prefix": [
+			"directive-mounted"
+		],
+		"body": [
+			"mounted (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: beforeUpdate()": {
+		"prefix": [
+			"directive-beforeUpdate"
+		],
+		"body": [
+			"beforeUpdate (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: updated()": {
+		"prefix": [
+			"directive-updated"
+		],
+		"body": [
+			"updated (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: beforeUnmount()": {
+		"prefix": [
+			"directive-beforeUnmount"
+		],
+		"body": [
+			"beforeUnmount (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	},
+	"Directive: unmounted()": {
+		"prefix": [
+			"directive-unmounted"
+		],
+		"body": [
+			"unmounted (el${2:, binding${3:, vnode${4:, prevVNode}}}) {",
+			"  $5",
+			"},$0"
+		]
+	}
+}

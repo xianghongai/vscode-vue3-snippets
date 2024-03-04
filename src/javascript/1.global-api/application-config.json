@@ -1,0 +1,50 @@
+{
+	"Vue: app.config.errorHandler()": {
+		"prefix": "app-config-errorHandler",
+		"body": [
+			"app.config.errorHandler = function (err, vm, info) {",
+			"  ${1}",
+			"};$0"
+		],
+		"description": "Assign a global handler for uncaught errors propagating from within the application.\n"
+	},
+	"Vue: app.config.warnHandler()": {
+		"prefix": "app-config-warnHandler",
+		"body": [
+			"app.config.warnHandler = function (msg, vm, trace) {",
+			"  ${1}",
+			"};$0"
+		],
+		"description": "Assign a custom handler for runtime warnings from Vue.\nWarnings only work during development, so this config is ignored in production mode.\n"
+	},
+	"Vue: app.config.globalProperties": {
+		"prefix": "app-config-globalProperties",
+		"body": [
+			"app.config.globalProperties.${1:property} = ${2:value};"
+		],
+		"description": "An object that can be used to register global properties that can be accessed on any component instance inside the application.\n"
+	},
+	"Vue: app.config.isCustomElement()": {
+		"prefix": "app-config-isCustomElement",
+		"body": [
+			"app.config.isCustomElement = (tag) => ($1);"
+		],
+		"description": "Type: `(tag: string) => boolean`.\nSpecifies a check method to recognize native custom elements.\n"
+	},
+	"Vue: app.config.optionMergeStrategies.property()": {
+		"prefix": "app-config-optionMergeStrategies",
+		"body": [
+			"app.config.optionMergeStrategies.${1:property} = (parent, child, vm) => {",
+			"  $0",
+			"};"
+		],
+		"description": "An object for defining merging strategies for custom component options.\n"
+	},
+	"Vue: app.config.performance": {
+		"prefix": "app-config-performance",
+		"body": [
+			"app.config.performance = ${1:false};"
+		],
+		"description": "Type: `boolean`.\nSet this to true to enable component init, compile, render and patch performance tracing in the browser devtool performance/timeline panel. Only works in development mode and in browsers that support the performance.mark API.\n"
+	}
+}

@@ -1,0 +1,90 @@
+{
+	"@before-enter": {
+		"prefix": [
+			"transition-on-before-enter"
+		],
+		"body": [
+			"@before-enter=\"${1:onBeforeEnter}\""
+		]
+	},
+	"@enter": {
+		"prefix": [
+			"transition-on-enter"
+		],
+		"body": [
+			"@enter=\"${1:onEnter}\""
+		]
+	},
+	"@after-enter": {
+		"prefix": [
+			"transition-on-after-enter"
+		],
+		"body": [
+			"@after-enter=\"${1:onAfterEnter}\""
+		]
+	},
+	"@enter-cancelled": {
+		"prefix": [
+			"transition-on-enter-cancelled"
+		],
+		"body": [
+			"@enter-cancelled=\"${1:onEnterCancelled}\""
+		]
+	},
+	"@appear": {
+		"prefix": [
+			"transition-on-appear"
+		],
+		"body": [
+			"@appear=\"${1:onAppear}\""
+		]
+	},
+	"@after-appear": {
+		"prefix": [
+			"transition-on-after-appear"
+		],
+		"body": [
+			"@after-appear=\"${1:onAfterAppear}\""
+		]
+	},
+	"@appear-cancelled": {
+		"prefix": [
+			"transition-on-appear-cancelled"
+		],
+		"body": [
+			"@appear-cancelled=\"${1:onAppearCancelled}\""
+		]
+	},
+	"@before-leave": {
+		"prefix": [
+			"transition-on-before-leave"
+		],
+		"body": [
+			"@before-leave=\"${1:onBeforeLeave}\""
+		]
+	},
+	"@leave": {
+		"prefix": [
+			"transition-on-leave"
+		],
+		"body": [
+			"@leave=\"${1:onLeave}\""
+		]
+	},
+	"@after-leave": {
+		"prefix": [
+			"transition-on-after-leave"
+		],
+		"body": [
+			"@after-leave=\"${1:onAfterLeave}\""
+		]
+	},
+	"@leave-cancelled": {
+		"prefix": [
+			"transition-on-leave-cancelled"
+		],
+		"body": [
+			"@leave-cancelled=\"${1:onLeaveCancelled}\""
+		]
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"Vue: import NavigationFailureType isNavigationFailure": {
+		"prefix": "import-NavigationFailureType-isNavigationFailure",
+		"body": [
+			"import { NavigationFailureType, isNavigationFailure } from 'vue-router';"
+		]
+	},
+	"Vue: isNavigationFailure": {
+		"prefix": "isNavigationFailure",
+		"body": [
+			"if (isNavigationFailure(failure${1:, NavigationFailureType.${2:aborted}})) {",
+			"  $3",
+			"}",
+			""
+		]
+	}
+}

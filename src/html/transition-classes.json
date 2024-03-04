@@ -1,0 +1,83 @@
+{
+	"enter-from-class": {
+		"prefix": [
+			"enter-from-class",
+			"transition-enter-from-class"
+		],
+		"body": [
+			"enter-from-class=\"${1:feature}-enter-from\""
+		]
+	},
+	"enter-active-class": {
+		"prefix": [
+			"enter-active-class",
+			"transition-enter-active-class"
+		],
+		"body": [
+			"enter-active-class=\"${1:feature}-enter-active\""
+		]
+	},
+	"enter-to-class": {
+		"prefix": [
+			"enter-to-class",
+			"transition-enter-to-class"
+		],
+		"body": [
+			"enter-to-class=\"${1:feature}-enter-to\""
+		]
+	},
+	"appear-from-class": {
+		"prefix": [
+			"appear-from-class",
+			"transition-appear-from-class"
+		],
+		"body": [
+			"appear-from-class=\"${1:feature}-appear-from\""
+		]
+	},
+	"appear-active-class": {
+		"prefix": [
+			"appear-active-class",
+			"transition-appear-active-class"
+		],
+		"body": [
+			"appear-active-class=\"${1:feature}-appear-active\""
+		]
+	},
+	"appear-to-class": {
+		"prefix": [
+			"appear-to-class",
+			"transition-appear-to-class"
+		],
+		"body": [
+			"appear-to-class=\"${1:feature}-appear-to\""
+		]
+	},
+	"leave-from-class": {
+		"prefix": [
+			"leave-from-class",
+			"transition-leave-from-class"
+		],
+		"body": [
+			"leave-from-class=\"${1:feature}-leave-from\""
+		]
+	},
+	"leave-active-class": {
+		"prefix": [
+			"leave-active-class",
+			"transition-leave-active-class"
+		],
+		"body": [
+			"leave-active-class=\"${1:feature}-leave-active\""
+		]
+	},
+	"leave-to-class": {
+		"prefix": [
+			"leave-to-class",
+			"transition-leave-to-class"
+		],
+		"body": [
+			"leave-to-class=\"${1:feature}-leave-to\""
+		]
+	}
+}

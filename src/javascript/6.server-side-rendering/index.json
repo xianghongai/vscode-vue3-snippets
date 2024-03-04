@@ -1,0 +1,22 @@
+{
+	"Vue: renderToString()": {
+		"prefix": "renderToString",
+		"body": [
+			"const ${2:html} = await renderToString(app${1:, context});"
+		]
+	},
+	"Vue: useSSRContext()": {
+		"prefix": "useSSRContext",
+		"body": [
+			"const context = useSSRContext();"
+		]
+	},
+	"Vue: useSSRContext(), precondition": {
+		"prefix": "useSSRContext-precondition",
+		"body": [
+			"if (import.meta.env.SSR) {",
+			"  const context = useSSRContext();",
+			"}"
+		]
+	}
+}

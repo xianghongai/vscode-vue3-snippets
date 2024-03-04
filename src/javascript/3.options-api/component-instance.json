@@ -1,0 +1,137 @@
+{
+	"Vue this.$data": {
+		"prefix": "vm-$data",
+		"body": [
+			"${9:this}.\\$data$0"
+		],
+		"description": "Type: `Object`.\nThe object returned from the `data` option, made reactive by the component. The component instance proxies access to the properties on its data object.\n"
+	},
+	"Vue this.$props": {
+		"prefix": "vm-$props",
+		"body": [
+			"${9:this}.\\$props$0"
+		],
+		"description": "Type: `Object`.\nAn object representing the component's current, resolved props.\n"
+	},
+	"Vue this.$el": {
+		"prefix": "vm-$el",
+		"body": [
+			"${9:this}.\\$el$0"
+		],
+		"description": "Type: `Node | undefined`.\nThe root DOM node that the component instance is managing.\n"
+	},
+	"Vue this.$options": {
+		"prefix": "vm-$options",
+		"body": [
+			"${9:this}.\\$options$0"
+		],
+		"description": "Type: `ComponentOptions`.\nThe resolved component options used for instantiating the current component instance.\n"
+	},
+	"Vue this.$parent": {
+		"prefix": "vm-$parent",
+		"body": [
+			"${9:this}.\\$parent$0"
+		],
+		"description": "Type: `ComponentPublicInstance | null`.\nThe parent instance, if the current instance has one. It will be `null` for the root instance itself.\n"
+	},
+	"Vue this.$root": {
+		"prefix": "vm-$root",
+		"body": [
+			"${9:this}.\\$root$0"
+		],
+		"description": "Type: `ComponentPublicInstance`.\nThe root component instance of the current component tree. If the current instance has no parents this value will be itself.\n"
+	},
+	"Vue this.$slots": {
+		"prefix": "vm-$slots",
+		"body": [
+			"${9:this}.\\$slots$0"
+		],
+		"description": "Type: `{ [name: string]: Slot }`.\nAn object representing the slots passed by the parent component.\n"
+	},
+	"Vue: this.$refs": {
+		"prefix": "vm-$refs",
+		"body": [
+			"${9:this}.\\$refs.${1:name}"
+		],
+		"description":"Type: `{ [name: string]: Element | ComponentPublicInstance | null }`.\nAn object of DOM elements and component instances, registered via template refs.\n"
+	},
+	"Vue this.$attrs": {
+		"prefix": "vm-$attrs",
+		"body": [
+			"${9:this}.\\$attrs$0"
+		],
+		"description": "Type: `object`.\nAn object that contains the component's fallthrough attributes.\n"
+	},
+	"Vue: this.$watch()": {
+		"prefix": "vm-$watch()",
+		"body": [
+			"const ${5:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${5:, ${4:oldValue}}) => {",
+			"  $0",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), immediate": {
+		"prefix": "vm-$watch()-immediate",
+		"body": [
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  immediate: true,",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), deep": {
+		"prefix": "vm-$watch()-deep",
+		"body": [
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  deep: true,",
+			"});"
+		]
+	},
+	"Vue: this.$watch(), deep, immediate": {
+		"prefix": "vm-$watch()-deep-immediate",
+		"body": [
+			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
+			"  $0",
+			"}, {",
+			"  deep: true,",
+			"  immediate: true,",
+			"});"
+		]
+	},
+	"Vue: this.$emit()": {
+		"prefix": "vm-$emit()",
+		"body": [
+			"${9:this}.\\$emit('${1:event-name}'${2:, ${3:param}});$0"
+		],
+		"description": "Trigger a custom event on the current instance. Any additional arguments will be passed into the listener's callback function.\n"
+	},
+	"Vue: this.$forceUpdate()": {
+		"prefix": "vm-$forceUpdate()",
+		"body": [
+			"this.\\$forceUpdate();$0"
+		],
+		"description": "Force the component instance to re-render.\n"
+	},
+	"Vue: this.$nextTick()": {
+		"prefix": [
+			"vm-nextTick-then"
+		],
+		"body": [
+			"this.\\$nextTick().then(() => {",
+			"  $1",
+			"});"
+		]
+	},
+	"Vue: await this.$nextTick()": {
+		"prefix": [
+			"await-vm-nextTick",
+			"vmnt"
+		],
+		"body": [
+			"await this.\\$nextTick();"
+		]
+	}
+}

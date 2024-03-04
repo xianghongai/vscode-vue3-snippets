@@ -1,0 +1,65 @@
+{
+	"Vue: this.$route.path": {
+		"prefix": "vm-route-path",
+		"body": [
+			"${9:this.\\$}route.path"
+		],
+		"description": "Route Object Properties:\nA string that equals the path of the current route, always resolved as an absolute path.\n"
+	},
+	"Vue: this.$route.params": {
+		"prefix": "vm-route-params",
+		"body": [
+			"${9:this.\\$}route.params"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of dynamic segments and star segments. If there are no params the value will be an empty object.\n"
+	},
+	"Vue: this.$route.query": {
+		"prefix": "vm-route-query",
+		"body": [
+			"${9:this.\\$}route.query"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the query string.\n"
+	},
+	"Vue: this.$route.meta": {
+		"prefix": "vm-route-meta",
+		"body": [
+			"${9:this.\\$}route.meta"
+		],
+		"description": "Route Object Properties:\nAn object that contains key/value pairs of the route meta object. If there are no meta properties the value will be an empty object.\n"
+	},
+	"Vue: this.$route.hash": {
+		"prefix": "vm-route-hash",
+		"body": [
+			"${9:this.\\$}route.hash"
+		],
+		"description": "Route Object Properties:\nThe hash of the current route (with the #), if it has one. If no hash is present the value will be an empty string.\n"
+	},
+	"Vue: this.$route.fullPath": {
+		"prefix": "vm-route-fullPath",
+		"body": [
+			"${9:this.\\$}route.fullPath"
+		],
+		"description": "Route Object Properties:\nThe full resolved URL including query and hash.\n"
+	},
+	"Vue: this.$route.matched": {
+		"prefix": "vm-route-matched",
+		"body": [
+			"${9:this.\\$}route.matched"
+		],
+		"description": "Route Object Properties:\nAn Array containing route records for all nested path segments of the current route. \n"
+	},
+	"Vue: this.$route.name": {
+		"prefix": "vm-route-name",
+		"body": [
+			"${9:this.\\$}route.name"
+		],
+		"description": "Route Object Properties:\nThe name of the current route, if it has one.\n"
+	},
+	"Vue: this.$route.redirectedFrom": {
+		"prefix": "vm-route-redirectedFrom",
+		"body": [
+			"${9:this.\\$}route.redirectedFrom"
+		],
+		"description": "Route Object Properties:\nThe name of the route being redirected from, if there were one.\n"
+	}
+}

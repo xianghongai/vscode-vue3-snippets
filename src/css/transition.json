@@ -1,0 +1,42 @@
+{
+	"Transition Classes​": {
+		"prefix": "css-transitions",
+		"body": [
+			".${1:feature}-enter-from {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-enter-active {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-enter-to {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-appear-from {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-appear-active {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-appear-to {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-leave-from {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-leave-active {",
+			"  ",
+			"}",
+			"",
+			".${1:feature}-leave-to {",
+			"  ",
+			"}"
+		]
+	}
+}

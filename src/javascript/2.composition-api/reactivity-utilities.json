@@ -1,0 +1,41 @@
+{
+	"Composition API: isRef()": {
+		"prefix": "isRef",
+		"body": "isRef(${1:value})",
+		"description": "Check if the given value is a ref.\n"
+	},
+	"Composition API: unref()": {
+		"prefix": "unref",
+		"body": "unref(${1:source})",
+		"description": "Unwraps a ref object and returns its value.\n"
+	},
+	"Composition API: toRef()": {
+		"prefix": "toRef",
+		"body": "toRef(${1:source}, ${2:key})",
+		"description": "Can be used to normalize values / refs / getters into refs (3.3+).\n"
+	},
+	"Composition API: toValue()": {
+		"prefix": "toValue",
+		"body": "toValue(${1:source})",
+		"description": "Normalizes values / refs / getters to values. This is similar to `unref()`, except that it also normalizes getters. If the argument is a getter, it will be invoked and its return value will be returned..\n"
+	},
+	"Composition API: toRefs()": {
+		"prefix": "toRefs",
+		"body": "toRefs(${1:source})"
+	},
+	"Composition API: isProxy()": {
+		"prefix": "isProxy",
+		"body": "isProxy(${1:value})",
+		"description": "Checks if an object is a proxy created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n"
+	},
+	"Composition API: isReactive()": {
+		"prefix": "isReactive",
+		"body": "isReactive(${1:value})",
+		"description": "Checks if an object is a proxy created by `reactive()`or `shallowReactive()`.\n"
+	},
+	"Composition API: isReadonly()": {
+		"prefix": "isReadonly",
+		"body": "isReadonly(${1:value})",
+		"description": "Checks whether the passed value is a readonly object. The properties of a readonly object can change, but they can't be assigned directly via the passed object.\n.The proxies created by readonly() and shallowReadonly() are both considered readonly, as is a computed() ref without a set function.\n"
+	}
+}

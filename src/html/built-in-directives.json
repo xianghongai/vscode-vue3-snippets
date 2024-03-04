@@ -1,0 +1,129 @@
+{
+	"v-model": {
+		"prefix": "v-model",
+		"body": [
+			"v-model=\"${1:value}\""
+		]
+	},
+	"v-show": {
+		"prefix": "v-show",
+		"body": [
+			"v-show=\"${1:condition}\""
+		]
+	},
+	"v-if": {
+		"prefix": "v-if",
+		"body": [
+			"v-if=\"${1:condition}\""
+		]
+	},
+	"v-else-if": {
+		"prefix": "v-else-if",
+		"body": [
+			"v-else-if=\"${1:condition}\""
+		]
+	},
+	"v-else": {
+		"prefix": "v-else",
+		"body": [
+			"v-else"
+		]
+	},
+	"v-for (item, index)": {
+		"prefix": "v-for-index",
+		"body": [
+			"v-for=\"(${1:item}, ${2:index}) in ${3:items}\" :key=\"${4:index}\"$0"
+		]
+	},
+	"v-for (item)": {
+		"prefix": "v-for",
+		"body": [
+			"v-for=\"${1:item} in ${2:items}\" :key=\"${4:item}\"$0"
+		]
+	},
+	"v-slot": {
+		"prefix": "v-slot",
+		"body": [
+			"<template #${1:default}>",
+			"  $0",
+			"</template>"
+		]
+	},
+	"v-slot, props": {
+		"prefix": "v-slot-props",
+		"body": [
+			"<template #${1:default}=\"${2:slotProps}\">",
+			"  $0",
+			"</template>"
+		]
+	},
+	"v-slot, Longhand": {
+		"prefix": "v-slot-longhand",
+		"body": [
+			"<template v-slot>",
+			"  $0",
+			"</template>"
+		]
+	},
+	"v-slot, Longhand, named": {
+		"prefix": "v-slot-named-longhand",
+		"body": [
+			"<template v-slot:${1:default}>",
+			"  $0",
+			"</template>"
+		]
+	},
+	"v-slot, Longhand, props": {
+		"prefix": "v-slot-props-longhand",
+		"body": [
+			"<template v-slot:${1:default}=\"${2:slotProps}\">",
+			"  $0",
+			"</template>"
+		]
+	},
+	"v-on": {
+		"prefix": "v-on",
+		"body": [
+			"@${1:click}=\"${2:handler}\""
+		]
+	},
+	"v-on, stop propagation": {
+		"prefix": "v-on-stop",
+		"body": [
+			"@${1:click}.stop=\"${2:handler}\""
+		]
+	},
+	"v-on, prevent default": {
+		"prefix": "v-on-prevent",
+		"body": [
+			"@${1:click}.prevent=\"${2:handler}\""
+		]
+	},
+	"v-on, stop propagation, prevent default": {
+		"prefix": [
+			"v-on-stop-prevent"
+		],
+		"body": [
+			"@${1:click}.stop.prevent=\"${2:handler}\""
+		]
+	},
+	"v-on, keyAlias": {
+		"prefix": "v-on-keyAlias",
+		"body": [
+			"@${1:keyup}.${2:enter}=\"${3:handler}\""
+		],
+		"description": "Key Aliases, System Modifier Keys, Mouse Button Modifiers..."
+	},
+	"v-on, once": {
+		"prefix": "v-on-once",
+		"body": [
+			"@${1:click}.once=\"${3:handler}\""
+		]
+	},
+	"v-on, multiple": {
+		"prefix": "v-on-multiple",
+		"body": [
+			"v-on=\"{ ${1:event1}: ${2:handler1} }\""
+		]
+	}
+}

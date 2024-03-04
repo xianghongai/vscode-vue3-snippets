@@ -1,0 +1,185 @@
+{
+	"routes: Array<RouteConfig>": {
+		"prefix": "routes",
+		"body": [
+			"const ${1:routes} = [",
+			"  {",
+			"    path: '${2:/pathname}',",
+			"    component: ${3:Feature},",
+			"  },",
+			"  {",
+			"    path: '${4:/pathname}',",
+			"    component: ${5:Feature},",
+			"    children: [",
+			"      {",
+			"        path: '${6:/pathname}',",
+			"        component: ${7:Feature},",
+			"      },",
+			"    ],",
+			"  },",
+			"];"
+		],
+		"description": "Define routes\n"
+	},
+	"Define route, { path, component }": {
+		"prefix": "route",
+		"body": [
+			"{",
+			"  path: '${1:pathname}',",
+			"  component: ${3:Feature},",
+			"},"
+		],
+		"description": "Define route\n"
+	},
+	"Define route, { path, name, component }": {
+		"prefix": "route",
+		"body": [
+			"{",
+			"  path: '${1:/pathname}',",
+			"  name: '${2:routeName}',",
+			"  component: ${3:Feature},",
+			"},"
+		],
+		"description": "Define named route\n"
+	},
+	"Define route, { path, component }, Named Views": {
+		"prefix": "route-named-views",
+		"body": [
+			"{",
+			"  path: '${1:/pathname}',",
+			"  components: {",
+			"    default: ${2:Feature},",
+			"    view${3:Name}: ${3},",
+			"  },",
+			"},"
+		]
+	},
+	"Define route, { path, component, alias }": {
+		"prefix": "route-alias",
+		"body": [
+			"{",
+			"  path: '${1:/feature}',",
+			"  component: ${2:Feature},",
+			"  alias: '{3:/feature}',",
+			"},"
+		],
+		"description": "Define alias route\n"
+	},
+	"Define route, { path, redirect }": {
+		"prefix": "route-redirect",
+		"body": [
+			"{",
+			"  path: '${1:/pathname}',",
+			"  redirect: '${2:/otherPathname},'",
+			"},"
+		],
+		"description": "Define redirect route\nExample:\n// relative redirect to a sibling route\n`{ path: 'relative-redirect', redirect: 'feature' }`\n// absolute redirect\n`{ path: '/absolute-redirect', redirect: '/feature' },`\n// named redirect\n`{ path: '/named-redirect', redirect: { name: 'feature' }},`\n// redirect with params\n`{ path: '/redirect-with-params/:id', redirect: '/with-params/:id' },`\n"
+	},
+	"Define route, { path, redirect: { name } }": {
+		"prefix": "route-redirect-name",
+		"body": [
+			"{",
+			"  path: '${1:/feature/:id}',",
+			"  redirect: {",
+			"    name: '${2:routeName}',",
+			"  },",
+			"},"
+		],
+		"description": "Define redirect route\n"
+	},
+	"Define route, { path, redirect }, Dynamic": {
+		"prefix": "route-redirect-dynamic",
+		"body": [
+			"{",
+			"  path: '/dynamic-redirect/:id?',",
+			"  redirect: (to) => {",
+			"    const { hash, params, query } = to;",
+			"    if (query.property === 'value') {",
+			"      return { path: '/pathname', query: null };",
+			"    }",
+			"    if (hash === '#feature') {",
+			"      return { name: 'routeName', hash: '' };",
+			"    }",
+			"    if (params.id) {",
+			"      return '/with-params/:id';",
+			"    } else {",
+			"      return '/feature';",
+			"    }",
+			"  },",
+			"},"
+		],
+		"description": "Define dynamic redirect\n"
+	},
+	"Define route, Passing Props: Boolean mode": {
+		"prefix": "route-props-boolean",
+		"body": [
+			"{",
+			"  path: '${1:/feature}',",
+			"  component: ${2:Feature},",
+			"  props: true,",
+			"},$0"
+		],
+		"description": "Passing Props to Route Components.\nWhen `props` is set to `true`, the `route.params` will be set as the component props.\n"
+	},
+	"Define route, Passing Props: Object mode": {
+		"prefix": "route-props-object",
+		"body": [
+			"{",
+			"  path: '${1:/feature}',",
+			"  component: ${2:Feature},",
+			"  props: { ${3:property}: '${4:value}' },",
+			"},$0"
+		],
+		"description": "Passing Props to Route Components\n"
+	},
+	"Define route, Passing Props: Function mode": {
+		"prefix": "route-props-function",
+		"body": [
+			"{",
+			"  path: '${1:/feature}',",
+			"  component: ${2:Feature},",
+			"  props: (route) => ($3{",
+			"    property: route.params.property,",
+			"    key: route.query.key,",
+			"  }),",
+			"},$0"
+		],
+		"description": "Passing Props to Route Components\n"
+	},
+	"Define route, Passing Props: Function mode, named views": {
+		"prefix": "route-props-function-named-views",
+		"body": [
+			"{",
+			"  path: '${1:/feature}',",
+			"  component: ${2:Feature},",
+			"  props: {",
+			"    default: ${3:true},",
+			"    ${4:viewName}: (route) => ($5{",
+			"      property: route.params.property,",
+			"    }),",
+			"  },",
+			"},$0"
+		],
+		"description": "Passing Props to Route Components\n"
+	},
+	"Lazy Loading Routes": {
+		"prefix": "lazy-route",
+		"body": [
+			"const ${1:Feature} = () => import('${2:@/views/Feature.vue}');$0"
+		]
+	},
+	"Lazy Loading Routes, webpack named chunks": {
+		"prefix": "lazy-route-chunk-webpack",
+		"body": [
+			"const ${1:Feature} = () => import(/* webpackChunkName: \"${2:feature}\" */ '${3:@/views/Feature.vue}');"
+		]
+	},
+	"Route Meta Fields": {
+		"prefix": "route-meta",
+		"body": [
+			"meta: { ",
+			"  ${1:requiresAuth}: ${2:true},",
+			"},"
+		]
+	}
+}

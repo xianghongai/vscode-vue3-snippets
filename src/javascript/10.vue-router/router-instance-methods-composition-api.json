@@ -1,0 +1,171 @@
+{
+	"router.push('pathname')": {
+		"prefix": "router-push",
+		"body": [
+			"router.push('${1:pathname}');"
+		],
+		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ path })": {
+		"prefix": "router-push-path",
+		"body": [
+			"router.push({ path: '${1:pathname}' });"
+		],
+		"description": "Router navigate to path.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ path, params })": {
+		"prefix": "router-push-path-params",
+		"body": [
+			"router.push({",
+			"  path: ${1:'${2:pathname}'},",
+			"  params: { ${3:property}: ${4:'value'} },$0",
+			"});"
+		],
+		"description": "Router navigate to path with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ path, query })": {
+		"prefix": "router-push-path-query",
+		"body": [
+			"router.push({",
+			"  path: ${1:'${2:pathname}'},",
+			"  query: { ${3:property}: ${4:'value'} },$0",
+			"});"
+		],
+		"description": "Router navigate to path with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ path, params, query })": {
+		"prefix": "router-push-path-params-query",
+		"body": [
+			"router.push({",
+			"  path: ${1:'${2:pathname}'},",
+			"  params: { ${3:property}: ${4:'value'} },",
+			"  query: { ${5:property}: ${6:'value'} },$0",
+			"});"
+		]
+	},
+	"router.push({ name })": {
+		"prefix": "router-push-name",
+		"body": [
+			"router.push({ name: '${1:routeName}' });"
+		],
+		"description": "Router navigate to named routes\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ name, params })": {
+		"prefix": "router-push-name-params",
+		"body": [
+			"router.push({",
+			"  name: ${1:'${2:routeName}'},",
+			"  params: { ${3:property}: ${4:'value'} },$0",
+			"});"
+		],
+		"description": "Router navigate to named routes with params.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ name, query })": {
+		"prefix": "router-push-name-query",
+		"body": [
+			"router.push({",
+			"  name: ${1:'${2:routeName}'},",
+			"  query: { ${3:property}: ${4:'value'} },$0",
+			"});"
+		],
+		"description": "Router navigate to named routes with query.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.push({ name, params, query })": {
+		"prefix": "router-push-name-params-query",
+		"body": [
+			"router.push({",
+			"  name: ${1:'${2:routeName}'},",
+			"  params: { ${3:property}: ${4:'value'} },",
+			"  query: { ${5:property}: ${6:'value'} },$0",
+			"});"
+		]
+	},
+	"router.replace({ path, params })": {
+		"prefix": "router-replace",
+		"body": [
+			"router.replace({",
+			"  path: ${1:'${2:pathname}'},",
+			"  params: { ${3:property}: ${4:'value'} },",
+			"});"
+		],
+		"description": "Router navigate to path without pushing a new history entry.\n#syntax:\nrouter.push(location, onComplete?, onAbort?)\nrouter.replace(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.replace({ name, params })": {
+		"prefix": "router-replace-name",
+		"body": [
+			"router.replace({",
+			"  name: ${1:'${2:routeName}'},",
+			"  params: { ${3:property}: ${4:'value'} },",
+			"});"
+		],
+		"description": "Router navigate to named routes without pushing a new history entry.\n#syntax:\nrouter.replace(location, onComplete?, onAbort?)\nrouter.push(location).then(onComplete).catch(onAbort)\n"
+	},
+	"router.go(n)": {
+		"prefix": "router-go",
+		"body": [
+			"router.go('${1:n}');"
+		],
+		"description": "This method takes a single integer as parameter that indicates by how many steps to go forwards or go backwards in the history stack.\n"
+	},
+	"router.back()": {
+		"prefix": "router-back",
+		"body": [
+			"router.back();"
+		],
+		"description": "go backwards in the history stack.\n"
+	},
+	"router.forward()": {
+		"prefix": "router-forward",
+		"body": [
+			"router.forward();"
+		],
+		"description": "go forwards in the history stack.\n"
+	},
+	"router.resolve(to, currentLocation)": {
+		"prefix": "router-resolve",
+		"body": [
+			"router.resolve(${3:to}, ${4:currentLocation});"
+		],
+		"description": "Resolves a location.\n#syntax:\nrouter.resolve(to: RouteLocationRaw, currentLocation?: RouteLocationNormalizedLoaded, append?: boolean): RouteLocation & { href: string }\n"
+	},
+	"router.addRoute()": {
+		"prefix": "router-addRoute",
+		"body": [
+			"router.addRoute(${1:route});"
+		],
+		"description": "Adding routes.\n#syntax:\naddRoute(route: RouteRecordRaw): () => void\n"
+	},
+	"router.addRoute(), nested": {
+		"prefix": "router-addRoute",
+		"body": [
+			"router.addRoute(${1:'parentRouteName'}, ${2:route});"
+		],
+		"description": "Adding nested routes.\n#syntax:\naddRoute(parentName: RouteRecordName, route: RouteRecordRaw): () => void\n"
+	},
+	"router.removeRoute()": {
+		"prefix": "router-removeRoute",
+		"body": [
+			"router.removeRoute(${1:'routeName'});"
+		],
+		"description": "Removing routes.\n#syntax:\nremoveRoute(name: RouteRecordName): void\n"
+	},
+	"router.getRoutes()": {
+		"prefix": "router-getRoutes",
+		"body": [
+			"const ${1:routes} = router.getRoutes();"
+		],
+		"description": "Getting routes.\n#syntax:\ngetRoutes(): RouteRecord[]\n"
+	},
+	"router.onReady()": {
+		"prefix": "router-onReady",
+		"body": [
+			"router.onReady(${1:callback}${2:, errorCallback});"
+		]
+	},
+	"router.onError()": {
+		"prefix": "router-onError",
+		"body": [
+			"router.onError(${1:callback});"
+		]
+	}
+}

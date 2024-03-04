@@ -1,0 +1,83 @@
+{
+	"Options API: props{}": {
+		"prefix": [
+			"option-props",
+			"ops"
+		],
+		"body": [
+			"props: {",
+			"  $1",
+			"},$0"
+		],
+		"description": "Type: Array<string> | Object\ntype: can be one of the following native constructors: `String`, `Number`, `Boolean`, `Array`, `Object`, `Date`, `Function`, `Symbol`, any custom constructor function or an array of those.\n"
+	},
+	"Options API: data()": {
+		"prefix": [
+			"option-data()",
+			"od"
+		],
+		"body": [
+			"data() {",
+			"  return {",
+			"    ${1:property}: ${2:'${3:value}'},$4",
+			"  };",
+			"},$0"
+		],
+		"description": "Type: Object | Function\n"
+	},
+	"Options API: computed{}": {
+		"prefix": [
+			"option-computed",
+			"ocd"
+		],
+		"body": [
+			"computed: {",
+			"  ${1:property}() {",
+			"    return this.${2:property};",
+			"  },",
+			"",
+			"},"
+		],
+		"description": "Type: { [key: string]: Function | { get: Function, set: Function } }\nComputed properties to be mixed into the Vue instance. All getters and setters have their this context automatically bound to the Vue instance.\nNote that if you use an arrow function with a computed property, `this` won’t be the component’s instance, but you can still access the instance as the function’s first argument.\n"
+	},
+	"Options API: methods{}": {
+		"prefix": [
+			"option-methods",
+			"oms"
+		],
+		"body": [
+			"methods: {",
+			"  ${1:methodName}($2) {",
+			"    $3",
+			"  },$0",
+			"},"
+		],
+		"description": "Type: { [key: string]: Function }\n"
+	},
+	"Options API: watch{}": {
+		"prefix": [
+			"option-watch",
+			"ow"
+		],
+		"body": [
+			"watch: {",
+			"  ${1:propertyName}(newValue, oldValue) {",
+			"    $2",
+			"  },$0",
+			"},"
+		],
+		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation.\n"
+	},
+	"Options API: emits[]": {
+		"prefix": "option-emits",
+		"body": [
+			"emits: ['${1:eventName}'],"
+		]
+	},
+	"Options API: expose[]": {
+		"prefix": "option-expose",
+		"body": [
+			"expose: ['${1:publicMethod}'],"
+		]
+	}
+}

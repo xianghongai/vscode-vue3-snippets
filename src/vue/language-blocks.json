@@ -1,0 +1,67 @@
+{
+	"Vue <template>": {
+		"prefix": "vue-template",
+		"body": [
+			"<template>",
+			"  <div$1>",
+			"    $0",
+			"  </div>",
+			"</template>"
+		],
+		"description": "Vue Template element.\n"
+	},
+	"Vue <style lang=\"\" scoped>": {
+		"prefix": "vue-style",
+		"body": [
+			"<style ${1:lang=\"$2\"} ${3:scoped}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	},
+	"Vue <style lang=\"\">": {
+		"prefix": "vue-style-no-scoped",
+		"body": [
+			"<style ${1:lang=\"$2\"}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	},
+	"Vue <style lang=\"postcss\" scoped>": {
+		"prefix": "vue-style-postcss",
+		"body": [
+			"<style lang=\"postcss\" ${1:scoped}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	},
+	"Vue <style lang=\"scss\" scoped>": {
+		"prefix": "vue-style-scss",
+		"body": [
+			"<style lang=\"scss\" ${1:scoped}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	},
+	"Vue <style lang=\"less\" scoped>": {
+		"prefix": "vue-style-less",
+		"body": [
+			"<style lang=\"less\" ${1:scoped}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	},
+	"Vue <style lang=\"stylus\" scoped>": {
+		"prefix": "vue-style-stylus",
+		"body": [
+			"<style lang=\"stylus\" ${1:scoped}>",
+			"$0",
+			"</style>"
+		],
+		"description": "Vue Style element.\n"
+	}
+}

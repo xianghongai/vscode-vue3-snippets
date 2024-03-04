@@ -1,0 +1,47 @@
+{
+	"<router-view>": {
+		"prefix": "router-view",
+		"body": [
+			"<router-view$1></router-view>$0"
+		]
+	},
+	"<router-view>, named": {
+		"prefix": "router-view-named",
+		"body": [
+			"<router-view name=\"${1:default}\"></router-view>$0"
+		],
+		"description": "Named router views\n"
+	},
+	"<router-view>, slot, KeepAlive": {
+		"prefix": "router-view-slot-KeepAlive",
+		"body": [
+			"<router-view v-slot=\"{ Component, route }\">",
+			"  <keep-alive>",
+			"    <component :is=\"Component\" :key=\"route.path\" />",
+			"  </keep-alive>",
+			"</router-view>"
+		]
+	},
+	"<router-view>, slot, Transition": {
+		"prefix": "router-view-slot-Transition",
+		"body": [
+			"<router-view v-slot=\"{ Component, route }\">",
+			"  <transition$1>",
+			"    <component :is=\"Component\" :key=\"route.path\" />",
+			"  </transition>",
+			"</router-view>"
+		]
+	},
+	"<router-view>, slot, KeepAlive & Transition ​": {
+		"prefix": "router-view-slot--KeepAlive-Transition",
+		"body": [
+			"<router-view v-slot=\"{ Component, route }\">",
+			"  <transition$1>",
+			"    <keep-alive>",
+			"      <component :is=\"Component\" :key=\"route.path\" />",
+			"    </keep-alive>",
+			"  </transition>",
+			"</router-view>"
+		]
+	}
+}

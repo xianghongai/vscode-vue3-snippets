@@ -1,0 +1,46 @@
+{
+	"Options API: provide()": {
+		"prefix": [
+			"option-provide",
+			"ope"
+		],
+		"body": [
+			"provide() {",
+			"  return {",
+			"    ${1:property}: ${2:'value'},",
+			"  }",
+			"},$0"
+		],
+		"description": "Provide values that can be injected by descendant components.\n"
+	},
+	"Options API: inject[]": {
+		"prefix": [
+			"option-inject",
+			"oit"
+		],
+		"body": [
+			"inject: ['${1:property}'],$0"
+		],
+		"description": "Declare properties to inject into the current component by locating them from ancestor providers.\n"
+	},
+	"Options API: extends": {
+		"prefix": [
+			"option-extends",
+			"oes"
+		],
+		"body": [
+			"extends: ${1:FeatureComponent},$0"
+		],
+		"description": "Type: Object | Function.\nAllows one component to extend another, inheriting its component options.\n"
+	},
+	"Options API: mixins[]": {
+		"prefix": [
+			"option-mixins",
+			"oms"
+		],
+		"body": [
+			"mixins: [${1:Mixin}],$0"
+		],
+		"description": "Type: Array<Object>.\nAn array of option objects to be mixed into the current component.\n"
+	}
+}

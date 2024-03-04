@@ -1,0 +1,20 @@
+{
+	"Composition API: provide()": {
+		"prefix": "provide",
+		"body": [
+			"provide('${1:name}', ${2:'value'});"
+		]
+	},
+	"Composition API: inject()": {
+		"prefix": "inject",
+		"body": [
+			"const ${1:state} = inject(${1:'value'});"
+		]
+	},
+	"Composition API: InjectionKey": {
+		"prefix": "InjectionKey",
+		"body": [
+			"const key: InjectionKey = Symbol();"
+		]
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"key": {
+		"prefix": "key",
+		"body": [
+			":key=\"${1:key}\""
+		]
+	},
+	"ref": {
+		"prefix": "ref",
+		"body": [
+			"ref=\"${1:featureRef}\""
+		],
+		"description": "Denotes a template ref.\n"
+	}
+}

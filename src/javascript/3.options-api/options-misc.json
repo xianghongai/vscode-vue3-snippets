@@ -1,0 +1,41 @@
+{
+	"Options API: name": {
+		"prefix": [
+			"option-name"
+		],
+		"body": [
+			"name: '${1:${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/g}}',$0"
+		],
+		"description": "Explicitly declare a display name for the component.\n"
+	},
+	"Options API: inheritAttrs": {
+		"prefix": [
+			"option-inheritAttrs",
+			"ois"
+		],
+		"body": [
+			"inheritAttrs: ${1:false},$0"
+		],
+		"description": "Controls whether the default component attribute fallthrough behavior should be enabled.\n"
+	},
+	"Options API: components{}": {
+		"prefix": [
+			"option-components",
+			"ocs"
+		],
+		"body": [
+			"components: { ${1:Feature} },$0"
+		],
+		"description": "An object that registers components to be made available to the component instance.\n"
+	},
+	"Options API: directives{}": {
+		"prefix": [
+			"option-directives",
+			"ods"
+		],
+		"body": [
+			"directives: { ${1:Feature} },$0"
+		],
+		"description": "An object that registers directives to be made available to the component instance.\n"
+	}
+}

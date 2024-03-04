@@ -1,0 +1,118 @@
+{
+	"Composition API: onBeforeMount()": {
+		"prefix": "onBeforeMount",
+		"body": [
+			"onBeforeMount(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is to be mounted.\n"
+	},
+	"Composition API: onMounted()": {
+		"prefix": "onMounted",
+		"body": [
+			"onMounted(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been mounted.\n"
+	},
+	"Composition API: onBeforeUpdate()": {
+		"prefix": "onBeforeUpdate",
+		"body": [
+			"onBeforeUpdate(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is about to update its DOM tree due to a reactive state change.\n"
+	},
+	"Composition API: onUpdated()": {
+		"prefix": "onUpdated",
+		"body": [
+			"onUpdated(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has updated its DOM tree due to a reactive state change.\n"
+	},
+	"Composition API: onBeforeUnmount()": {
+		"prefix": "onBeforeUnmount",
+		"body": [
+			"onBeforeUnmount(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before a component instance is to be unmounted.\n"
+	},
+	"Composition API: onUnmounted()": {
+		"prefix": "onUnmounted",
+		"body": [
+			"onUnmounted(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been unmounted.\n"
+	},
+	"Composition API: onErrorCaptured()": {
+		"prefix": "onErrorCaptured",
+		"body": [
+			"onErrorCaptured((err, instance, info) => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called when an error propagating from a descendant component has been captured.\n"
+	},
+	"Composition API: onRenderTracked()": {
+		"prefix": "onRenderTracked",
+		"body": [
+			"onRenderTracked((event) => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency has been tracked by the component's render effect.\n"
+	},
+	"Composition API: onRenderTriggered()": {
+		"prefix": "onRenderTriggered",
+		"body": [
+			"onRenderTriggered((event) => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Dev only.\nComposition API: Lifecycle Hooks.\nRegisters a debug hook to be called when a reactive dependency triggers the component's render effect to be re-run.\n"
+	},
+	"Composition API: onActivated()": {
+		"prefix": "onActivated",
+		"body": [
+			"onActivated(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is inserted into the DOM as part of a tree cached by `<KeepAlive>`.\n"
+	},
+	"Composition API: onDeactivated()": {
+		"prefix": "onDeactivated",
+		"body": [
+			"onDeactivated(() => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component instance is removed from the DOM as part of a tree cached by `<KeepAlive>`.\n"
+	},
+	"Composition API: onServerPrefetch()": {
+		"prefix": "onServerPrefetch",
+		"body": [
+			"onServerPrefetch(async () => {",
+			"  $1",
+			"});$0"
+		],
+		"description": "SSR only.\nComposition API: Lifecycle Hooks.\nRegisters an async function to be resolved before the component instance is to be rendered on the server.\n"
+	},
+	"Composition API: async onMounted()": {
+		"prefix": "async-onMounted",
+		"body": [
+			"onMounted(async () => {",
+			"  $1",
+			"});$0"
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"Vue: defineComponent(), Typing": {
+		"prefix": "defineComponent",
+		"body": [
+			"${0:export default }defineComponent({",
+			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"  data() {",
+			"    return {",
+			"      ${6}",
+			"    };",
+			"  },$0",
+			"",
+			"  mounted() {",
+			"    ${7}",
+			"  },",
+			"",
+			"  methods: {",
+			"    ${8}",
+			"  },",
+			"});"
+		],
+		"description": "Type inference for props in Options API requires wrapping the component with defineComponent().\n"
+	}
+}

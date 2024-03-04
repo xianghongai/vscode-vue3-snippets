@@ -1,0 +1,58 @@
+{
+	"Vue SFC - Options API, defineComponent()": {
+		"prefix": ["vue", "vue-options-api-defineComponent"],
+		"body": [
+			"<template>",
+			"  <div>",
+			"    <!-- -->",
+			"  </div>",
+			"</template>",
+			"",
+			"<script>",
+			"export default defineComponent({",
+			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"  data() {",
+			"    return {",
+			"      ${6}",
+			"    };",
+			"  },$0",
+			"",
+			"  mounted() {",
+			"    ${7}",
+			"  },",
+			"",
+			"  methods: {",
+			"    ${8}",
+			"  },",
+			"});",
+			"</script>"
+		],
+		"description": "Vue Single-File Components (Options API).\n"
+	},
+	"Vue <script> - Options API, defineComponent()": {
+		"prefix": ["vue-script", "vue-script-options-api-defineComponent"],
+		"body": [
+			"<script>",
+			"export default defineComponent({",
+			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"  data() {",
+			"    return {",
+			"      ${6}",
+			"    };",
+			"  },$0",
+			"",
+			"  mounted() {",
+			"    ${7}",
+			"  },",
+			"",
+			"  methods: {",
+			"    ${8}",
+			"  },",
+			"});",
+			"</script>"
+		],
+		"description": "Vue Script element (Options API).\n"
+	}
+}

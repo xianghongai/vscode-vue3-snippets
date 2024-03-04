@@ -1,0 +1,23 @@
+{
+	"Vue: useRoute()": {
+		"prefix": "useRoute",
+		"body": [
+			"const route = useRoute();"
+		]
+	},
+	"Vue: useRouter()": {
+		"prefix": "useRouter",
+		"body": [
+			"const router = useRouter();"
+		]
+	},
+	"Vue: useLink()": {
+		"prefix": "useLink",
+		"body": [
+			"const { href, isActive, isExactActive, navigate, route } = useLink({",
+			"  to: ${1:'/pathname'}",
+			"});"
+		],
+		"description": "格式和 `<router-link>` 的 `to` prop 一样，能被 `router.resolve` 解析。\n"
+	}
+}

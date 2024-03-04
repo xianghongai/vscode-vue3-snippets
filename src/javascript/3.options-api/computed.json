@@ -1,0 +1,30 @@
+{
+	"computed property": {
+		"prefix": [
+			"computed-property",
+			"cp"
+		],
+		"body": [
+			"${1:property}() {",
+			"  return this.${2:property};",
+			"},",
+			""
+		]
+	},
+	"computed property, get, set": {
+		"prefix": [
+			"computed-property-get-set",
+			"cpgs"
+		],
+		"body": [
+			"${3:property}: {",
+			"  get() {",
+			"    return this.${4:value};",
+			"  },",
+			"  set(${5:val}) {",
+			"    this.${4:value} = $5;",
+			"  },",
+			"},$0"
+		]
+	}
+}

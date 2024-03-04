@@ -1,0 +1,61 @@
+{
+	"watch property": {
+		"prefix": [
+			"watch-property",
+			"wp"
+		],
+		"body": [
+			"${1:property}(${2:newValue}${3:, ${4:oldValue}}) {",
+			"  $5",
+			"},",
+			"$0"
+		]
+	},
+	"watch property, deep": {
+		"prefix": [
+			"watch-property-deep",
+			"wpd"
+		],
+		"body": [
+			"${1:property}: {",
+			"  deep: true,",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
+			"  },",
+			"},",
+			"$0"
+		]
+	},
+	"watch property, immediate": {
+		"prefix": [
+			"watch-property-immediate",
+			"wpi"
+		],
+		"body": [
+			"${1:property}: {",
+			"  immediate: true,",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
+			"  },",
+			"},",
+			"$0"
+		]
+	},
+	"watch property, deep, immediate": {
+		"prefix": [
+			"watch-property-deep-immediate",
+			"watch-property-immediate-deep",
+			"wpdi"
+		],
+		"body": [
+			"${1:property}: {",
+			"  deep: true,",
+			"  immediate: true,",
+			"  handler(${2:newValue}${3:, ${4:oldValue}}) {",
+			"    $5",
+			"  },",
+			"},",
+			"$0"
+		]
+	}
+}

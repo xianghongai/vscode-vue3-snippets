@@ -1,0 +1,25 @@
+{
+	"Options API: template": {
+		"prefix": "option-template",
+		"body": [
+			"template: ${1:`${2}`},"
+		],
+		"description": "A string template for the component.\n"
+	},
+	"Options API: render(h, context)": {
+		"prefix": "option-render",
+		"body": [
+			"render() {",
+			"  return h('${1:tag}', ${2:'string'});",
+			"},"
+		],
+		"description": "A function that programmatically returns the virtual DOM tree of the component.\n"
+	},
+	"Options API: slots, Typing": {
+		"prefix": "option-slots",
+		"body": [
+			"slots: Object as SlotsType<${1}>,"
+		],
+		"description": "An option to assist with type inference when using slots programmatically in render functions. Only supported in 3.3+.\n"
+	}
+}

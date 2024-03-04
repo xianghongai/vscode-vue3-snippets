@@ -1,0 +1,88 @@
+{
+	"Composition API: shallowRef()": {
+		"prefix": "shallowRef",
+		"body": [
+			"const ${1:state} = shallowRef(${2:original});"
+		]
+	},
+	"Composition API: triggerRef()": {
+		"prefix": "triggerRef",
+		"body": [
+			"triggerRef(${1:state});"
+		]
+	},
+	"Composition API: customRef()": {
+		"prefix": "customRef",
+		"body": [
+			"$0customRef((track, trigger) => {",
+			"  return {",
+			"    get() {",
+			"      track();",
+			"      return value;",
+			"    },",
+			"    set(newValue) {$2",
+			"      value = newValue;",
+			"      trigger();",
+			"    },",
+			"  };",
+			"});"
+		]
+	},
+	"Composition API: shallowReactive()": {
+		"prefix": "shallowReactive",
+		"body": [
+			"const ${1:state} = shallowReactive(${2:original});"
+		],
+		"description": "Shallow data structures should only be used for root level state in a component.\n"
+	},
+	"Composition API: shallowReadonly()": {
+		"prefix": "shallowReadonly",
+		"body": [
+			"const ${1:state} = shallowReadonly(${2:original});"
+		],
+		"description": "Shallow data structures should only be used for root level state in a component.\n"
+	},
+	"Composition API: toRaw()": {
+		"prefix": "toRaw",
+		"body": [
+			"toRaw(${2:reactiveSate})"
+		],
+		"description": "`toRaw()` can return the original object from proxies created by `reactive()`, `readonly()`, `shallowReactive()` or `shallowReadonly()`.\n"
+	},
+	"Composition API: markRaw()": {
+		"prefix": "markRaw",
+		"body": [
+			"markRaw(${2:original})"
+		],
+		"description": "Marks an object so that it will never be converted to a proxy. Returns the object itself.\n"
+	},
+	"Composition API: effectScope()": {
+		"prefix": "effectScope",
+		"body": [
+			"const ${1:scope} = effectScope();",
+			"",
+			"${1}.run(() => {",
+			"  ${2}",
+			"});",
+			"",
+			"// ${1}.stop();"
+		],
+		"description": "Creates a new effect scope. The returned object has a `run` method that takes a function and runs it.\n"
+	},
+	"Composition API: getCurrentScope()": {
+		"prefix": "getCurrentScope",
+		"body": [
+			"const ${1:scope} = getCurrentScope();"
+		],
+		"description": "Returns the current effect scope, or `undefined` if not inside an effect scope.\n"
+	},
+	"Composition API: onScopeDispose()": {
+		"prefix": "onScopeDispose",
+		"body": [
+			"onScopeDispose(${1:scope}, () => {",
+			"  ${2}",
+			"});"
+		],
+		"description": "Registers a callback to be called when the scope is disposed.\n"
+	}
+}

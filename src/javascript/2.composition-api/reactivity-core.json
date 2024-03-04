@@ -1,0 +1,243 @@
+{
+	"Composition API: ref()": {
+		"prefix": "ref",
+		"body": [
+			"const ${1:state} = ref(${2:original});"
+		],
+		"description": "Reactivity API - Refs.\nTakes an inner value and returns a reactive and mutable ref object. The ref object has a single property `.value` that points to the inner value.\n"
+	},
+	"Composition API: computed()": {
+		"prefix": "computed",
+		"body": [
+			"const ${3:feature} = computed(() => ${1:state.value});"
+		],
+		"description": "Reactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n"
+	},
+	"Composition API: computed({ get, set })": {
+		"prefix": "computed",
+		"body": [
+			"const ${3:feature} = computed({",
+			"  get: () => ${1:state.value},",
+			"  set: (newValue) => {",
+			"    ${1:state.value} = newValue;",
+			"  },",
+			"});"
+		],
+		"description": "Reactivity API - Computed and watch.\nTake an object with `get` and `set` functions to create a writable ref object.\n"
+	},
+	"Composition API: reactive()": {
+		"prefix": "reactive",
+		"body": [
+			"const ${1:state} = reactive(${2:original});"
+		],
+		"description": "Reactivity API - Basic Reactivity APIs.\nReturns a reactive copy of the object.\nThe reactive conversion is \"deep\"—it affects all nested properties. In the ES2015 Proxy (opens new window) based implementation, the returned proxy is not equal to the original object. It is recommended to work exclusively with the reactive proxy and avoid relying on the original object.\n"
+	},
+	"Composition API: readonly()": {
+		"prefix": "readonly",
+		"body": [
+			"const ${1:state} = readonly(${2:original});"
+		],
+		"description": "Reactivity API - Basic Reactivity APIs.\nTakes an object (reactive or plain) or a ref and returns a readonly proxy to the original. A readonly proxy is deep: any nested property accessed will be readonly as well.\n"
+	},
+	"Composition API: watchEffect()": {
+		"prefix": "watchEffect",
+		"body": [
+			"watchEffect(async () => {",
+			"  $0",
+			"});",
+			""
+		],
+		"description": "watchEffect(effect, options?);\nWatchEffectOptions { immediate?, deep?, flush?, onTrack?, onTrigger?, once? };\n"
+	},
+	"Composition API: watchPostEffect()": {
+		"prefix": "watchPostEffect",
+		"body": [
+			"watchPostEffect(async () => {",
+			"  $0",
+			"});",
+			""
+		],
+		"description": "Alias of watchEffect() with flush: 'post' option.\n"
+	},
+	"Composition API: watchSyncEffect()": {
+		"prefix": "watchSyncEffect",
+		"body": [
+			"watchSyncEffect(() => {",
+			"  $0",
+			"});",
+			""
+		],
+		"description": "Alias of watchEffect() with flush: 'sync' option.\n"
+	},
+	"Composition API: watch(), props": {
+		"prefix": "watch-props",
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), props, deep": {
+		"prefix": "watch-props-deep",
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), props, immediate": {
+		"prefix": "watch-props-immediate",
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), props, immediate, multiple": {
+		"prefix": "watch-props-immediate-multiple",
+		"body": [
+			"watch(",
+			"  [() => props.${1:property1}, () => props.${2:property2}],",
+			"  async ([$1, $2]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), props, deep, immediate": {
+		"prefix": [
+			"watch-props-deep-immediate",
+			"watch-props-immediate-deep"
+		],
+		"body": [
+			"watch(",
+			"  () => props.${1:property},",
+			"  async (newValue) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch()": {
+		"prefix": "watch",
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), deep": {
+		"prefix": [
+			"watch-deep",
+			"wd"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), immediate": {
+		"prefix": [
+			"watch-immediate",
+			"wi"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), immediate, multiple": {
+		"prefix": [
+			"watch-immediate-multiple",
+			"wim"
+		],
+		"body": [
+			"watch(",
+			"  [${1:source1}, ${2:source2}],",
+			"  async ([next${1/(.*)/${1:/pascalcase}/}, next${2/(.*)/${1:/pascalcase}/}], [prev${1/(.*)/${1:/pascalcase}/}, prev${2/(.*)/${1:/pascalcase}/}]) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	},
+	"Composition API: watch(), deep, immediate": {
+		"prefix": [
+			"watch-deep-immediate",
+			"wdi"
+		],
+		"body": [
+			"watch(",
+			"  ${1:source1},",
+			"  async (next${1/(.*)/${1:/pascalcase}/}) => {",
+			"    $0",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");",
+			""
+		],
+		"description": ""
+	}
+}

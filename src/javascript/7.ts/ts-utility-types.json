@@ -1,0 +1,40 @@
+{
+	"Vue: PropType<T>": {
+		"prefix": "PropType",
+		"body": [
+			"PropType<${1:T}>"
+		]
+	},
+	"Vue: MaybeRef<T>": {
+		"prefix": "MaybeRef",
+		"body": [
+			"MaybeRef<${1:T}>"
+		],
+		"description": "Alias for `T | Ref<T>`.\n"
+	},
+	"Vue: MaybeRefOrGetter<T>": {
+		"prefix": "MaybeRefOrGetter",
+		"body": [
+			"MaybeRefOrGetter<${1:T}>"
+		],
+		"description": "Alias for `T | Ref<T> | (() => T)`.\n"
+	},
+	"Vue: ExtractPropTypes<T>": {
+		"prefix": "ExtractPropTypes",
+		"body": [
+			"const ${2:propsOptions} = {",
+			"  $1",
+			"} as const;",
+			"type Props = ExtractPropTypes<typeof ${2:propsOptions}>"
+		]
+	},
+	"Vue: ExtractPublicPropTypes<T>": {
+		"prefix": "ExtractPublicPropTypes",
+		"body": [
+			"const ${2:propsOptions} = {",
+			"  $1",
+			"} as const;",
+			"type Props = ExtractPublicPropTypes<typeof ${1:propsOptions}>"
+		]
+	}
+}

@@ -1,0 +1,34 @@
+on:
+  # push:
+  #   branches: [ main ]
+  # pull_request:
+  #   branches: [ main ]
+  push:
+    tags:
+      - "*"
+
+  workflow_dispatch:
+
+name: Publish VS Code Extension — GitHub Action
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install @vscode/vsce
+        run: npm i -g @vscode/vsce
+
+      - name: Install the dependencies
+        run: npm i
+
+      - name: Build
+        run: npm run build
+
+      - name: Publish
+        run: vsce publish -p ${{ secrets.VS_MARKETPLACE_TOKEN }}

@@ -1,0 +1,50 @@
+{
+	"Vue: nextTick()": {
+		"prefix": "nextTick",
+		"body": [
+			"nextTick().then(() => {",
+			"  $1",
+			"});"
+		],
+		"description": "A utility for waiting for the next DOM update flush."
+	},
+	"Vue: await nextTick()": {
+		"prefix": [
+			"await-nextTick",
+			"nt"
+		],
+		"body": [
+			"await nextTick();"
+		],
+		"description": "A utility for waiting for the next DOM update flush."
+	},
+	"Vue: defineComponent(ComponentOptions)": {
+		"prefix": "defineComponent",
+		"body": [
+			"const ${2:Feature} = defineComponent($1);"
+		],
+		"description": "function defineComponent(component: ComponentOptions): ComponentConstructor;\nfunction defineComponent(setup: ComponentOptions['setup'], extraOptions?: ComponentOptions): () => any;\n"
+	},
+	"Vue: defineAsyncComponent(AsyncComponentLoader)": {
+		"prefix": "defineAsyncComponent",
+		"body": [
+			"const ${2:AsyncComp} = defineAsyncComponent(() =>",
+			"  import('${1:./components/MyComponent.vue}')",
+			");"
+		],
+		"description": "defineAsyncComponent(AsyncComponentLoader): Component;\ntype AsyncComponentLoader = () => Promise<Component>;\n"
+	},
+	"Vue: defineAsyncComponent(AsyncComponentOptions)": {
+		"prefix": "defineAsyncComponent",
+		"body": [
+			"const ${5:AsyncComp} = defineAsyncComponent({",
+			"  loader: ${1:() => import('${2:./components/MyComponent.vue}')},",
+			"  delay: 200,",
+			"  timeout: 3000,",
+			"  errorComponent: ${3:syncComponent1},",
+			"  loadingComponent: ${4:syncComponent2},",
+			"});"
+		],
+		"description": "defineAsyncComponent(AsyncComponentOptions);\n"
+	}
+}

@@ -1,0 +1,50 @@
+{
+	"<Transition>": {
+		"prefix": "transition",
+		"body": [
+			"<transition name=\"${1:name}\">",
+			"  $0",
+			"</transition>"
+		],
+		"description": "Provides animated transition effects to a single element or component.\n"
+	},
+	"<TransitionGroup>": {
+		"prefix": "transition-group",
+		"body": [
+			"<transition-group name=\"${1:list}\" tag=\"${2:ul}\">",
+			"  $0",
+			"</transition-group>"
+		],
+		"description": "Provides transition effects for multiple elements or components in a list.\n"
+	},
+	"<KeepAlive>": {
+		"prefix": "keep-alive",
+		"body": [
+			"<keep-alive>",
+			"  $0",
+			"</keep-alive>"
+		],
+		"description": "Caches dynamically toggled components wrapped inside.\n"
+	},
+	"<Teleport>": {
+		"prefix": "teleport",
+		"body": [
+			"<teleport to=\"${1:selector}\">",
+			"  $0",
+			"</teleport>"
+		],
+		"description": "Renders its slot content to another part of the DOM.\n"
+	},
+	"<Suspense>": {
+		"prefix": "suspense",
+		"body": [
+			"<suspense>",
+			"  $1",
+			"  <template #fallback>",
+			"    $2",
+			"  </template>",
+			"</suspense>"
+		],
+		"description": "Used for orchestrating nested async dependencies in a component tree.\n"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"<component>": {
+		"prefix": "component",
+		"body": [
+			"<component :is=\"${1:Feature}\" />"
+		],
+		"description": "A \"meta component\" for rendering dynamic components or elements.\n"
+	},
+	"<slot>": {
+		"prefix": "slot",
+		"body": [
+			"<slot></slot>"
+		],
+		"description": "Denotes slot content outlets in templates.\n"
+	},
+	"<slot>, Named": {
+		"prefix": "slot-name",
+		"body": [
+			"<slot name=\"${1:name}\"></slot>"
+		],
+		"description": "Named Slots.\n"
+	},
+	"<slot>, Scoped": {
+		"prefix": "slot-scope",
+		"body": [
+			"<slot ${2::${3:prop}}=\"${4:var}\"$5></slot>"
+		],
+		"description": "Named Slots.\n"
+	},
+	"<slot>, Named, Scoped": {
+		"prefix": "slot-name-scope",
+		"body": [
+			"<slot name=\"${1:name}\" ${2::${3:prop}}=\"${4:var}\"$5></slot>"
+		],
+		"description": "Named Slots.\n"
+	}
+}
