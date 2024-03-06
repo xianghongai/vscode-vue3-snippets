@@ -4,7 +4,7 @@
 	"displayName": "Vue 3 Snippets",
 	"description": "Code snippets for Vue 3 (Only Vue 3.x, Vue Router 4.x)",
 	"icon": "art/icon.png",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
