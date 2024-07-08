@@ -1,6 +1,10 @@
 {
 	"Vue SFC - Composition API Hook": {
-		"prefix": ["vue", "vue-composition-api-hook"],
+		"prefix": [
+			"vue",
+			"vue-composition-api-hook",
+			"vcah"
+		],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -22,12 +26,10 @@
 			"};",
 			"</script>",
 			""
-		],
-		"description": "Vue Single-File Component (Composition API Hook).\n"
+		]
 	},
-
 	"Vue SFC - Composition API Hook, SCSS": {
-		"prefix": ["vue-scss", "vue-scss-composition-api-hook"],
+		"prefix": "vue-composition-api-hook (scss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -52,11 +54,10 @@
 			"<style lang=\"scss\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Component (Composition API Hook).\n"
+		]
 	},
 	"Vue SFC - Composition API Hook, LESS": {
-		"prefix": ["vue-less", "vue-less-composition-api-hook"],
+		"prefix": "vue-composition-api-hook (less)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -81,11 +82,10 @@
 			"<style lang=\"less\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Component (Composition API Hook).\n"
+		]
 	},
 	"Vue SFC - Composition API Hook, PostCSS": {
-		"prefix": ["vue-postcss", "vue-postcss-composition-api-hook"],
+		"prefix": "vue-composition-api-hook (postcss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -110,11 +110,10 @@
 			"<style lang=\"postcss\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Component (Composition API Hook).\n"
+		]
 	},
 	"Vue SFC - Composition API Hook, CSS": {
-		"prefix": ["vue-css", "vue-css-composition-api-hook"],
+		"prefix": "vue-composition-api-hook (css)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -139,12 +138,10 @@
 			"<style lang=\"css\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Component (Composition API Hook).\n"
+		]
 	},
-
-	"Vue <script> - Composition API Hook": {
-		"prefix": ["vue-script", "vue-script-composition-api-hook"],
+	"Composition API Hook: <script>": {
+		"prefix": "vue-composition-api-hook-script",
 		"body": [
 			"<script>",
 			"import { ref } from 'vue';",
@@ -160,7 +157,6 @@
 			"};",
 			"</script>",
 			""
-		],
-		"description": "Language Blocks: `<script>` (Composition API Hook).\n"
+		]
 	}
 }

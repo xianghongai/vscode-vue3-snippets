@@ -1,6 +1,10 @@
 {
 	"Vue SFC - Composition API": {
-		"prefix": ["vue", "vue-composition-api"],
+		"prefix": [
+			"vue",
+			"vue-composition-api",
+			"vca"
+		],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -15,9 +19,8 @@
 		],
 		"description": "Composition API is a built-in feature of Vue 3 and Vue 2.7. For older Vue 2 versions, use the officially maintained @vue/composition-api plugin.\n"
 	},
-
 	"Vue SFC - Composition API, SCSS": {
-		"prefix": ["vue-scss", "vue-scss-composition-api"],
+		"prefix": "vue-composition-api (scss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -35,7 +38,7 @@
 		]
 	},
 	"Vue SFC - Composition API, LESS": {
-		"prefix": ["vue-less", "vue-less-composition-api"],
+		"prefix": "vue-composition-api (less)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -53,7 +56,7 @@
 		]
 	},
 	"Vue SFC - Composition API, PostCSS": {
-		"prefix": ["vue-postcss", "vue-postcss-composition-api"],
+		"prefix": "vue-composition-api (postcss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -71,7 +74,7 @@
 		]
 	},
 	"Vue SFC - Composition API, CSS": {
-		"prefix": ["vue-css", "vue-css-composition-api"],
+		"prefix": "vue-composition-api (css)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -88,9 +91,8 @@
 			"</style>"
 		]
 	},
-
-	"Vue <script setup> - Composition API": {
-		"prefix": ["vue-script", "vue-script-composition-api"],
+	"Composition API: <script setup>": {
+		"prefix": "vue-composition-api-script",
 		"body": [
 			"<script setup>",
 			"$0",

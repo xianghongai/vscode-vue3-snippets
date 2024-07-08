@@ -107,6 +107,14 @@
 		],
 		"description": "SSR only.\nComposition API: Lifecycle Hooks.\nRegisters an async function to be resolved before the component instance is to be rendered on the server.\n"
 	},
+	"Composition API: async onBeforeMount()": {
+		"prefix": "async-onBeforeMount",
+		"body": [
+			"onBeforeMount(async () => {",
+			"  $1",
+			"});$0"
+		]
+	},
 	"Composition API: async onMounted()": {
 		"prefix": "async-onMounted",
 		"body": [

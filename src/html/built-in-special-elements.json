@@ -14,23 +14,23 @@
 		"description": "Denotes slot content outlets in templates.\n"
 	},
 	"<slot>, Named": {
-		"prefix": "slot-name",
+		"prefix": "slot-named",
 		"body": [
-			"<slot name=\"${1:name}\"></slot>"
+			"<slot name=\"${1:default}\"></slot>"
 		],
 		"description": "Named Slots.\n"
 	},
 	"<slot>, Scoped": {
-		"prefix": "slot-scope",
+		"prefix": "slot-scoped",
 		"body": [
 			"<slot ${2::${3:prop}}=\"${4:var}\"$5></slot>"
 		],
 		"description": "Named Slots.\n"
 	},
 	"<slot>, Named, Scoped": {
-		"prefix": "slot-name-scope",
+		"prefix": "slot-named-scoped",
 		"body": [
-			"<slot name=\"${1:name}\" ${2::${3:prop}}=\"${4:var}\"$5></slot>"
+			"<slot name=\"${1:default}\" ${2::${3:prop}}=\"${4:var}\"$5></slot>"
 		],
 		"description": "Named Slots.\n"
 	}

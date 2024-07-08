@@ -1,6 +1,9 @@
 {
 	"Composition API: getCurrentInstance()": {
-		"prefix": "getCurrentInstance",
+		"prefix": [
+			"getCurrentInstance",
+			"gci"
+		],
 		"body": [
 			"const instance = getCurrentInstance();"
 		],

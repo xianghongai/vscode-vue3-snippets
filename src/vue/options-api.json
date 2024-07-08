@@ -1,6 +1,10 @@
 {
 	"Vue SFC - Options API": {
-		"prefix": ["vue", "vue-options-api"],
+		"prefix": [
+			"vue",
+			"vue-options-api",
+			"voi"
+		],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -30,10 +34,8 @@
 		],
 		"description": "Vue Single-File Components (Options API).\n"
 	},
-
-
 	"Vue SFC - Options API, SCSS": {
-		"prefix": ["vue-scss", "vue-scss-options-api"],
+		"prefix": "vue-options-api (scss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -68,7 +70,7 @@
 		"description": "Vue Single-File Components (Options API) with SCSS.\n"
 	},
 	"Vue SFC - Options API, LESS": {
-		"prefix": ["vue-less", "vue-less-options-api"],
+		"prefix": "vue-options-api (less)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -103,7 +105,7 @@
 		"description": "Vue Single-File Components (Options API) with LESS.\n"
 	},
 	"Vue SFC - Options API, PostCSS": {
-		"prefix": ["vue-postcss", "vue-postcss-options-api"],
+		"prefix": "vue-options-api (postcss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -138,7 +140,7 @@
 		"description": "Vue Single-File Components (Options API) with PostCSS.\n"
 	},
 	"Vue SFC - Options API, CSS": {
-		"prefix": ["vue-css", "vue-css-options-api"],
+		"prefix": "vue-options-api (css)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -172,9 +174,8 @@
 		],
 		"description": "Vue Single-File Components (Options API) with CSS.\n"
 	},
-
-	"Vue <script> - Options API": {
-		"prefix": ["vue-script", "vue-script-options-api"],
+	"Options API: <script>": {
+		"prefix": "vue-options-api-script",
 		"body": [
 			"<script>",
 			"export default {",

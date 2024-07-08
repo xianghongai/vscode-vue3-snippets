@@ -41,16 +41,22 @@
 			"v-for=\"${1:item} in ${2:items}\" :key=\"${4:item}\"$0"
 		]
 	},
-	"v-slot": {
-		"prefix": "v-slot",
+	"v-slot, named": {
+		"prefix": [
+			"v-slot-named",
+			"vsn"
+		],
 		"body": [
 			"<template #${1:default}>",
 			"  $0",
 			"</template>"
 		]
 	},
-	"v-slot, props": {
-		"prefix": "v-slot-props",
+	"v-slot, named, props": {
+		"prefix": [
+			"v-slot-named-props",
+			"vsnp"
+		],
 		"body": [
 			"<template #${1:default}=\"${2:slotProps}\">",
 			"  $0",
@@ -74,7 +80,7 @@
 		]
 	},
 	"v-slot, Longhand, props": {
-		"prefix": "v-slot-props-longhand",
+		"prefix": "v-slot-named-props-longhand",
 		"body": [
 			"<template v-slot:${1:default}=\"${2:slotProps}\">",
 			"  $0",

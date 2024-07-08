@@ -18,7 +18,7 @@
 		],
 		"description": "Controls whether the default component attribute fallthrough behavior should be enabled.\n"
 	},
-	"Options API: components{}": {
+	"Options API: components": {
 		"prefix": [
 			"option-components",
 			"ocs"
@@ -28,7 +28,7 @@
 		],
 		"description": "An object that registers components to be made available to the component instance.\n"
 	},
-	"Options API: directives{}": {
+	"Options API: directives": {
 		"prefix": [
 			"option-directives",
 			"ods"

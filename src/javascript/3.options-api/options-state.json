@@ -28,7 +28,7 @@
 	"Options API: computed{}": {
 		"prefix": [
 			"option-computed",
-			"ocd"
+			"oc"
 		],
 		"body": [
 			"computed: {",
@@ -43,7 +43,7 @@
 	"Options API: methods{}": {
 		"prefix": [
 			"option-methods",
-			"oms"
+			"om"
 		],
 		"body": [
 			"methods: {",
