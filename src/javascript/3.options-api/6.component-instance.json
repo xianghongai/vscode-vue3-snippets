@@ -53,7 +53,7 @@
 		"body": [
 			"${9:this}.\\$refs.${1:name}"
 		],
-		"description":"Type: `{ [name: string]: Element | ComponentPublicInstance | null }`.\nAn object of DOM elements and component instances, registered via template refs.\n"
+		"description": "Type: `{ [name: string]: Element | ComponentPublicInstance | null }`.\nAn object of DOM elements and component instances, registered via template refs.\n"
 	},
 	"Vue this.$attrs": {
 		"prefix": "vm-$attrs",
@@ -65,40 +65,52 @@
 	"Vue: this.$watch()": {
 		"prefix": "vm-$watch()",
 		"body": [
-			"const ${5:unwatch} = ${9:this}.\\$watch('${2:property}', (${3:newValue}${5:, ${4:oldValue}}) => {",
-			"  $0",
+			"${9:this}.\\$watch('${2:property}', ($3) => {",
+			"  $4",
 			"});"
 		]
 	},
 	"Vue: this.$watch(), immediate": {
 		"prefix": "vm-$watch()-immediate",
 		"body": [
-			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
-			"  $0",
-			"}, {",
-			"  immediate: true,",
-			"});"
+			"${9:this}.\\$watch(",
+			"  '${2:property}',",
+			"  ($3) => {",
+			"    $4",
+			"  },",
+			"  {",
+			"    immediate: true,",
+			"  }",
+			");"
 		]
 	},
 	"Vue: this.$watch(), deep": {
 		"prefix": "vm-$watch()-deep",
 		"body": [
-			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
-			"  $0",
-			"}, {",
-			"  deep: true,",
-			"});"
+			"${9:this}.\\$watch(",
+			"  '${2:property}',",
+			"  ($3) => {",
+			"    $4",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"  }",
+			");"
 		]
 	},
 	"Vue: this.$watch(), deep, immediate": {
 		"prefix": "vm-$watch()-deep-immediate",
 		"body": [
-			"${9:this}.\\$watch('${2:property}', (${3:newValue}${4:, ${5:oldValue}}) => {",
-			"  $0",
-			"}, {",
-			"  deep: true,",
-			"  immediate: true,",
-			"});"
+			"${9:this}.\\$watch(",
+			"  '${2:property}',",
+			"  ($3) => {",
+			"    $4",
+			"  },",
+			"  {",
+			"    deep: true,",
+			"    immediate: true,",
+			"  }",
+			");"
 		]
 	},
 	"Vue: this.$emit()": {

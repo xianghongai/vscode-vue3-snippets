@@ -1,0 +1,89 @@
+{
+	"Vue: defineProps()": {
+		"prefix": [
+			"defineProps",
+			"dp"
+		],
+		"body": [
+			"const props = defineProps({",
+			"  ${1}",
+			"});",
+			""
+		],
+		"description": "**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\n"
+	},
+	"Vue: defineEmits()": {
+		"prefix": [
+			"defineEmits",
+			"de"
+		],
+		"body": [
+			"const emit = defineEmits(['${1:change}']);",
+			"$0"
+		],
+		"description": "**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\n"
+	},
+	"Vue: defineExpose()": {
+		"prefix": [
+			"defineExpose",
+			"dex"
+		],
+		"body": [
+			"defineExpose({",
+			"  ${1}",
+			"});"
+		],
+		"description": "**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\n"
+	},
+
+	"Vue: defineOptions()": {
+		"prefix": [
+			"defineOptions",
+			"do"
+		],
+		"body": [
+			"defineOptions({",
+			"  ${1}",
+			"});"
+		],
+		"description": "Only supported in 3.3+.\n**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\n"
+	},
+	"Vue: defineModel()": {
+		"prefix": [
+			"defineModel",
+			"dm"
+		],
+		"body": [
+			"const ${1:model} = defineModel();"
+		],
+		"description": "Only available in 3.4+.\n**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\nExample:\n`const model = defineModel('<name>', { required: true, default: 0 });`\n`<ChildComponent v-model:<name>=\"value\" />` === `<ChildComponent :<name>=\"value\" @update:<name>=\"value = $event\" />`\nIn 3.x `v-model` on the custom component is an equivalent of passing a `modelValue` prop and emitting an `update:modelValue` event: `<ChildComponent v-model=\"value\" />` === `<ChildComponent :modelValue=\"value\" @update:modelValue=\"value = $event\" />`"
+	},
+	"Vue: defineModel(), Modifiers and Transformers": {
+		"prefix": [
+			"defineModel",
+			"dmm"
+		],
+		"body": [
+			"const [model, modifiers] = defineModel({",
+			"  set(value) {",
+			"    if (modifiers.${1:property}) {$0",
+			"      return value;",
+			"    }",
+			"    return value;",
+			"  }",
+			"});"
+		]
+	},
+	"Vue: defineSlots()": {
+		"prefix": [
+			"defineSlots",
+			"ds"
+		],
+		"body": [
+			"const slots = defineSlots<{",
+			"  default(props: { ${1:prop}: string }): any",
+			"}>();"
+		],
+		"description": "Only available in 3.3+ (TS only).\nProvide type hints to IDEs for slot name and props type checking.\n**compiler macros** only usable inside `<script setup>`. They do not need to be imported, and are compiled away when `<script setup>` is processed.\n"
+	}
+}

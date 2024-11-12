@@ -1,10 +1,6 @@
 {
-	"Vue SFC - Composition API Hook": {
-		"prefix": [
-			"vue",
-			"vue-composition-api-hook",
-			"vcah"
-		],
+	"Vue SFC - Composition API": {
+		"prefix": "vue-composition-api",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -17,10 +13,10 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const feature = ref();$0",
+			"    const ${1:feature} = ref();$0",
 			"",
 			"    return {",
-			"      ",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",
@@ -28,8 +24,8 @@
 			""
 		]
 	},
-	"Vue SFC - Composition API Hook, SCSS": {
-		"prefix": "vue-composition-api-hook (scss)",
+	"Vue SFC - Composition API, SCSS": {
+		"prefix": "vue-composition-api (scss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -42,10 +38,10 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const feature = ref();$0",
+			"    const ${1:feature} = ref();$0",
 			"",
 			"    return {",
-			"      ",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",
@@ -56,8 +52,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API Hook, LESS": {
-		"prefix": "vue-composition-api-hook (less)",
+	"Vue SFC - Composition API, LESS": {
+		"prefix": "vue-composition-api (less)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -70,10 +66,10 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const feature = ref();$0",
+			"    const ${1:feature} = ref();$0",
 			"",
 			"    return {",
-			"      ",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",
@@ -84,8 +80,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API Hook, PostCSS": {
-		"prefix": "vue-composition-api-hook (postcss)",
+	"Vue SFC - Composition API, PostCSS": {
+		"prefix": "vue-composition-api (postcss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -98,10 +94,10 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const feature = ref();$0",
+			"    const ${1:feature} = ref();$0",
 			"",
 			"    return {",
-			"      ",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",
@@ -112,8 +108,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API Hook, CSS": {
-		"prefix": "vue-composition-api-hook (css)",
+	"Vue SFC - Composition API, CSS": {
+		"prefix": "vue-composition-api (css)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -126,10 +122,10 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const feature = ref();$0",
+			"    const ${1:feature} = ref();$0",
 			"",
 			"    return {",
-			"      ",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",
@@ -140,8 +136,8 @@
 			"</style>"
 		]
 	},
-	"Composition API Hook: <script>": {
-		"prefix": "vue-composition-api-hook-script",
+	"Composition API: <script>": {
+		"prefix": "vue-composition-api-script",
 		"body": [
 			"<script>",
 			"import { ref } from 'vue';",
@@ -151,7 +147,7 @@
 			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
-			"      $1",
+			"      $1,",
 			"    };",
 			"  },",
 			"};",

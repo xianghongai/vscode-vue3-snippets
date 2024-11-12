@@ -2,7 +2,7 @@
 	"Vue: Plugin": {
 		"prefix": "plugin-component",
 		"body": [
-			"import Feature from './src/main';",
+			"import Feature from './main.vue';",
 			"$0",
 			"Feature.install = (app, options = {}) => {",
 			"\tapp.component(Feature.name, Feature);",

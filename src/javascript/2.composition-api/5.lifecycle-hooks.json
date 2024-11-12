@@ -1,6 +1,9 @@
 {
 	"Composition API: onBeforeMount()": {
-		"prefix": "onBeforeMount",
+		"prefix": [
+			"onBeforeMount",
+			"obm"
+		],
 		"body": [
 			"onBeforeMount(() => {",
 			"  $1",
@@ -9,7 +12,10 @@
 		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is to be mounted.\n"
 	},
 	"Composition API: onMounted()": {
-		"prefix": "onMounted",
+		"prefix": [
+			"onMounted",
+			"om"
+		],
 		"body": [
 			"onMounted(() => {",
 			"  $1",
@@ -18,7 +24,10 @@
 		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has been mounted.\n"
 	},
 	"Composition API: onBeforeUpdate()": {
-		"prefix": "onBeforeUpdate",
+		"prefix": [
+			"onBeforeUpdate",
+			"obu"
+		],
 		"body": [
 			"onBeforeUpdate(() => {",
 			"  $1",
@@ -27,7 +36,10 @@
 		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before the component is about to update its DOM tree due to a reactive state change.\n"
 	},
 	"Composition API: onUpdated()": {
-		"prefix": "onUpdated",
+		"prefix": [
+			"onUpdated",
+			"ou"
+		],
 		"body": [
 			"onUpdated(() => {",
 			"  $1",
@@ -36,7 +48,10 @@
 		"description": "Composition API: Lifecycle Hooks.\nRegisters a callback to be called after the component has updated its DOM tree due to a reactive state change.\n"
 	},
 	"Composition API: onBeforeUnmount()": {
-		"prefix": "onBeforeUnmount",
+		"prefix": [
+			"onBeforeUnmount",
+			"obum"
+		],
 		"body": [
 			"onBeforeUnmount(() => {",
 			"  $1",
@@ -45,7 +60,10 @@
 		"description": "Composition API: Lifecycle Hooks.\nRegisters a hook to be called right before a component instance is to be unmounted.\n"
 	},
 	"Composition API: onUnmounted()": {
-		"prefix": "onUnmounted",
+		"prefix": [
+			"onUnmounted",
+			"oum"
+		],
 		"body": [
 			"onUnmounted(() => {",
 			"  $1",
@@ -108,7 +126,10 @@
 		"description": "SSR only.\nComposition API: Lifecycle Hooks.\nRegisters an async function to be resolved before the component instance is to be rendered on the server.\n"
 	},
 	"Composition API: async onBeforeMount()": {
-		"prefix": "async-onBeforeMount",
+		"prefix": [
+			"async-onBeforeMount",
+			"asobm"
+		],
 		"body": [
 			"onBeforeMount(async () => {",
 			"  $1",
@@ -116,7 +137,10 @@
 		]
 	},
 	"Composition API: async onMounted()": {
-		"prefix": "async-onMounted",
+		"prefix": [
+			"async-onMounted",
+			"asom"
+		],
 		"body": [
 			"onMounted(async () => {",
 			"  $1",

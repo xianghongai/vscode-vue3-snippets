@@ -15,17 +15,17 @@
 			"c"
 		],
 		"body": [
-			"const ${3:feature} = computed(() => ${1:state.value});"
+			"const ${1:feature} = computed(() => ${2:state.value});"
 		],
 		"description": "Reactivity API - Computed and watch.\nTakes a getter function and returns an immutable reactive ref object for the returned value from the getter.\n"
 	},
 	"Composition API: computed({ get, set })": {
 		"prefix": "computed",
 		"body": [
-			"const ${3:feature} = computed({",
-			"  get: () => ${1:state.value},",
+			"const ${1:feature} = computed({",
+			"  get: () => ${2:state.value},",
 			"  set: (newValue) => {",
-			"    ${1:state.value} = newValue;",
+			"    ${2:state.value} = newValue;",
 			"  },",
 			"});"
 		],
@@ -76,11 +76,14 @@
 		"description": "Alias of watchEffect() with flush: 'sync' option.\n"
 	},
 	"Composition API: watch(), props": {
-		"prefix": "watch",
+		"prefix": [
+			"watch-props",
+			"w"
+		],
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (newValue) => {",
+			"  async (${2:newValue}) => {",
 			"    $0",
 			"  },",
 			");",
@@ -96,7 +99,7 @@
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (newValue) => {",
+			"  async (${2:newValue}) => {",
 			"    $0",
 			"  },",
 			"  {",
@@ -115,7 +118,7 @@
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (newValue) => {",
+			"  async (${2:newValue}) => {",
 			"    $0",
 			"  },",
 			"  {",
@@ -134,7 +137,7 @@
 		"body": [
 			"watch(",
 			"  () => props.${1:property},",
-			"  async (newValue) => {",
+			"  async (${2:newValue}) => {",
 			"    $0",
 			"  },",
 			"  {",
@@ -148,8 +151,8 @@
 	},
 	"Composition API: watch(), props, immediate, multiple": {
 		"prefix": [
-			"watch-props-immediate-multiple",
-			"wmi"
+			"watch-props-deep-immediate-multiple",
+			"wdim"
 		],
 		"body": [
 			"watch(",
@@ -158,6 +161,7 @@
 			"    $0",
 			"  },",
 			"  {",
+			"    deep: true,",
 			"    immediate: true,",
 			"  }",
 			");",

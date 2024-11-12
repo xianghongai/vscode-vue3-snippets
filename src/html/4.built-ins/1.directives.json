@@ -87,6 +87,15 @@
 			"</template>"
 		]
 	},
+	"v-bind=\"$attrs\"": {
+		"prefix": [
+			"v-bind-$attrs",
+			"vba"
+		],
+		"body": [
+			"${1:v-bind=\"\\$attrs\"}$0"
+		]
+	},
 	"v-on": {
 		"prefix": "v-on",
 		"body": [

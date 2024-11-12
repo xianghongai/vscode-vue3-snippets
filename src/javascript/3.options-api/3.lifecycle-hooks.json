@@ -156,7 +156,10 @@
 		"description": "Async function to be resolved before the component instance is to be rendered on the server.\n"
 	},
 	"Options API: async created()": {
-		"prefix": "async-option-created()",
+		"prefix": [
+			"async-option-created()",
+			"asolc"
+		],
 		"body": [
 			"async created() {",
 			"  $1",
@@ -164,7 +167,10 @@
 		]
 	},
 	"Options API: async mounted()": {
-		"prefix": "async-option-mounted()",
+		"prefix": [
+			"async-option-mounted()",
+			"asolm"
+		],
 		"body": [
 			"async mounted() {",
 			"  $1",

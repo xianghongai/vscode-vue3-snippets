@@ -4,7 +4,7 @@
 	"displayName": "Vue 3 Snippets",
 	"description": "Code snippets for Vue 3 (Only Vue 3.x, Vue Router 4.x)",
 	"icon": "art/icon.png",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"type": "module",
 	"galleryBanner": {
 		"color": "#ffffff",
@@ -114,10 +114,8 @@
 		]
 	},
 	"devDependencies": {
+		"@vscode/vsce": "^3.2.1",
 		"glob": "^10.3.10",
 		"nodemon": "^3.1.0"
-	},
-	"peerDependencies": {
-		"@vscode/vsce": "^2.24.0"
 	}
 }

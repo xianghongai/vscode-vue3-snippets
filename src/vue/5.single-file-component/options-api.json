@@ -1,10 +1,6 @@
 {
 	"Vue SFC - Options API": {
-		"prefix": [
-			"vue",
-			"vue-options-api",
-			"voi"
-		],
+		"prefix": "vue-options-api",
 		"body": [
 			"<template>",
 			"  <div>",

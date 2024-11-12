@@ -1,0 +1,49 @@
+{
+	"Composition API Helpers: useAttrs()": {
+		"prefix": [
+			"useAttrs",
+			"ua"
+		],
+		"body": [
+			"const attrs = useAttrs();"
+		],
+		"description": "Used in `<script setup>`.\n"
+	},
+	"Composition API Helpers: useSlots()": {
+		"prefix": [
+			"useSlots",
+			"us"
+		],
+		"body": [
+			"const slots = useSlots();"
+		],
+		"description": "Used in `<script setup>`.\n"
+	},
+	"Composition API Helpers: useModel()": {
+		"prefix": [
+			"useModel",
+			"um"
+		],
+		"body": [
+			"const ${1:model} = useModel(props, '${3:key}');"
+		],
+		"description": "Used in `setup(props) { }`.\n If using `<script setup>`, `defineModel()` should be preferred instead.\n"
+	},
+	"Composition API Helpers: useTemplateRef()": {
+		"prefix": [
+			"useTemplateRef",
+			"utr"
+		],
+		"body": [
+			"const ${1:elementRef} = useTemplateRef('${2:refName}');"
+		],
+		"description": "Used in `<script setup>`.\n"
+	},
+	"Composition API Helpers: useId()": {
+		"prefix": "useId",
+		"body": [
+			"const id = useId();"
+		],
+		"description": "Used in `<script setup>`.\n"
+	}
+}

@@ -38,5 +38,35 @@
 			"  ",
 			"}"
 		]
+	},
+	"Deep Selectors": {
+		"prefix": "deep",
+		"body": [
+			"${1:selector} :deep(${2:child}) {",
+			"  $0",
+			"}"
+		]
+	},
+	"Slotted Selectors": {
+		"prefix": "slotted",
+		"body": [
+			"${1:selector} :slotted(${2:child}) {",
+			"  $0",
+			"}"
+		]
+	},
+	"Global Selectors": {
+		"prefix": "global",
+		"body": [
+			":global(${1:selector}) {",
+			"  $0",
+			"}"
+		]
+	},
+	"v-bind": {
+		"prefix": "v-bind",
+		"body": [
+			"v-bind:${1:prop}"
+		]
 	}
 }

@@ -9,5 +9,16 @@
 			"  $3",
 			"},$0"
 		]
+	},
+	"methods property, async": {
+		"prefix": [
+			"methods-property-async",
+			"asmp"
+		],
+		"body": [
+			"async ${1:methodName}($2) {",
+			"  $3",
+			"},$0"
+		]
 	}
 }

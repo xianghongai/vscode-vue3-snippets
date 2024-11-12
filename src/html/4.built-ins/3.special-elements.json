@@ -33,5 +33,13 @@
 			"<slot name=\"${1:default}\" ${2::${3:prop}}=\"${4:var}\"$5></slot>"
 		],
 		"description": "Named Slots.\n"
+	},
+	"<slot>, Named, Scoped, Conditional": {
+		"prefix": "slot-named-scoped-condition",
+		"body": [
+			"<div v-if=\"\\$slots.${1:default}\">",
+			"  <slot name=\"${1:default}\" ${2::${3:prop}}=\"${4:var}\"$5></slot>",
+			"</div>"
+		]
 	}
 }

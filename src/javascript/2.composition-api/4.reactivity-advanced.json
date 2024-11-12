@@ -1,6 +1,9 @@
 {
 	"Composition API: shallowRef()": {
-		"prefix": "shallowRef",
+		"prefix": [
+			"shallowRef",
+			"sr"
+		],
 		"body": [
 			"const ${1:state} = shallowRef(${2:original});"
 		]

@@ -39,7 +39,7 @@
 			"oms"
 		],
 		"body": [
-			"mixins: [${1:Mixin}],$0"
+			"mixins: [${1:mixin}],$0"
 		],
 		"description": "Type: Array<Object>.\nAn array of option objects to be mixed into the current component.\n"
 	}

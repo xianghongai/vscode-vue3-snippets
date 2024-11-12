@@ -1,6 +1,9 @@
 {
 	"Vue: nextTick()": {
-		"prefix": "nextTick",
+		"prefix": [
+			"nextTick",
+			"ntt"
+		],
 		"body": [
 			"nextTick().then(() => {",
 			"  $1",

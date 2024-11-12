@@ -1,6 +1,6 @@
 {
 	"Vue: createApp()": {
-		"prefix": "createApp",
+		"prefix": ["createApp", "app"],
 		"body": [
 			"import { createApp } from 'vue';",
 			"import App from './App.vue';",

@@ -1,10 +1,6 @@
 {
-	"Vue SFC - Composition API": {
-		"prefix": [
-			"vue",
-			"vue-composition-api",
-			"vca"
-		],
+	"Vue SFC": {
+		"prefix": "vue",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -13,14 +9,16 @@
 			"</template>",
 			"",
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>",
 			""
 		],
 		"description": "Composition API is a built-in feature of Vue 3 and Vue 2.7. For older Vue 2 versions, use the officially maintained @vue/composition-api plugin.\n"
 	},
-	"Vue SFC - Composition API, SCSS": {
-		"prefix": "vue-composition-api (scss)",
+	"Vue SFC: SCSS": {
+		"prefix": "vue (scss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -29,7 +27,9 @@
 			"</template>",
 			"",
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>",
 			"",
 			"<style lang=\"scss\" scoped>",
@@ -37,8 +37,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, LESS": {
-		"prefix": "vue-composition-api (less)",
+	"Vue SFC: LESS": {
+		"prefix": "vue (less)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -47,7 +47,9 @@
 			"</template>",
 			"",
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>",
 			"",
 			"<style lang=\"less\" scoped>",
@@ -55,8 +57,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, PostCSS": {
-		"prefix": "vue-composition-api (postcss)",
+	"Vue SFC: PostCSS": {
+		"prefix": "vue (postcss)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -65,7 +67,9 @@
 			"</template>",
 			"",
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>",
 			"",
 			"<style lang=\"postcss\" scoped>",
@@ -73,8 +77,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, CSS": {
-		"prefix": "vue-composition-api (css)",
+	"Vue SFC: CSS": {
+		"prefix": "vue (css)",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -83,7 +87,9 @@
 			"</template>",
 			"",
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>",
 			"",
 			"<style lang=\"css\" scoped>",
@@ -92,10 +98,12 @@
 		]
 	},
 	"Composition API: <script setup>": {
-		"prefix": "vue-composition-api-script",
+		"prefix": "vue-script",
 		"body": [
 			"<script setup>",
-			"$0",
+			"import { ref } from 'vue';",
+			"",
+			"const ${1:feature} = ref();$0",
 			"</script>"
 		],
 		"description": "Language Blocks: `<script setup>` (Composition API).\n"

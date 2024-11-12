@@ -47,7 +47,7 @@
 			"@after-appear=\"${1:onAfterAppear}\""
 		]
 	},
-	"@appear-cancelled": {
+	"@appear-cancelled (v-show only)": {
 		"prefix": [
 			"transition-on-appear-cancelled"
 		],

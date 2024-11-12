@@ -1,6 +1,6 @@
 {
-	"Vue SFC - TypeScript": {
-		"prefix": "vue-ts",
+	"Vue - TS with Composition API": {
+		"prefix": "vue-ts-composition-api",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -14,9 +14,9 @@
 		],
 		"description": "Vue Single-File Component (TypeScript).\n"
 	},
-	"Vue <script> - Composition API (TypeScript)": {
+	"Vue - TS with Composition API: <script setup>": {
 		"prefix": [
-			"vue-script-ts"
+			"vue-ts-composition-api-script"
 		],
 		"body": [
 			"<script setup lang=\"ts\">",

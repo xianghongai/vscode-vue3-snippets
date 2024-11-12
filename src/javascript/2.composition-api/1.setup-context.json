@@ -1,0 +1,24 @@
+{
+	"Composition API - Setup Context: emit()": {
+		"prefix": [
+			"emit",
+			"e"
+		],
+		"body": [
+			"emit('${1:event-name}'${2:, ${3:param}});$0"
+		],
+		"description": "Emits an event from the component.\nsetup(props, { emit, expose, attrs, slots })\n* Attributes (Non-reactive object, equivalent to $attrs);\n* Slots (Non-reactive object, equivalent to $slots);\n* Emit events (Function, equivalent to $emit);\n* Expose public properties (Function).\n"
+	},
+	"Composition API - Setup Context: expose()": {
+		"prefix": [
+			"expose",
+			"ex"
+		],
+		"body": [
+			"expose({",
+			"  $1",
+			"});$0"
+		],
+		"description": "Exposes a function or object from the component.\nsetup(props, { emit, expose, attrs, slots })\n"
+	}
+}

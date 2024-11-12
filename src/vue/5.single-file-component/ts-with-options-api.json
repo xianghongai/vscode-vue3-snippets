@@ -1,6 +1,6 @@
 {
-	"Vue SFC - Options API, defineComponent()": {
-		"prefix": ["vue", "vue-options-api-defineComponent"],
+	"Vue - TS with Options API": {
+		"prefix": "vue-ts-options-api",
 		"body": [
 			"<template>",
 			"  <div>",
@@ -8,7 +8,9 @@
 			"  </div>",
 			"</template>",
 			"",
-			"<script>",
+			"<script lang=\"ts\">",
+			"import { defineComponent } from 'vue';",
+			"",
 			"export default defineComponent({",
 			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
 			"",
@@ -27,15 +29,28 @@
 			"  },",
 			"});",
 			"</script>"
-		],
-		"description": "Vue Single-File Components (Options API).\n"
+		]
 	},
-	"Vue <script> - Options API, defineComponent()": {
-		"prefix": ["vue-script", "vue-script-options-api-defineComponent"],
+	"Vue - TS with Options API: <script>": {
+		"prefix": "vue-ts-options-api-script",
 		"body": [
-			"<script>",
+			"<script lang=\"ts\">",
+			"import { defineComponent } from 'vue';",
+			"import type { PropType } from 'vue';",
+			"",
+			"interface ${1:Props} {",
+			"  feature?: string;",
+			"}",
+			"",
 			"export default defineComponent({",
 			"  name: '${WORKSPACE_NAME/(.*)/${1:/pascalcase}/}${TM_FILENAME_BASE/(.*)/${1:/pascalcase}/}',",
+			"",
+			"  props: {",
+			"    ${2:feature}: {",
+			"      type: Object as PropType<${1:Props}>,",
+			"      default: () => ({}),",
+			"    },",
+			"  },",
 			"",
 			"  data() {",
 			"    return {",
@@ -52,7 +67,6 @@
 			"  },",
 			"});",
 			"</script>"
-		],
-		"description": "Vue Script element (Options API).\n"
+		]
 	}
 }
