@@ -32,7 +32,7 @@
 		]
 	},
 	"Vue - TS with Options API: <script>": {
-		"prefix": "vue-ts-options-api-script",
+		"prefix": "vue-ts-options-api (script)",
 		"body": [
 			"<script lang=\"ts\">",
 			"import { defineComponent } from 'vue';",

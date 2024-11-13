@@ -1,6 +1,6 @@
 {
-	"Vue SFC - Composition API": {
-		"prefix": "vue-composition-api",
+	"Vue SFC-Composition API": {
+		"prefix": ["vue-sfc"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -13,7 +13,7 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const ${1:feature} = ref();$0",
+			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
 			"      $1,",
@@ -24,8 +24,8 @@
 			""
 		]
 	},
-	"Vue SFC - Composition API, SCSS": {
-		"prefix": "vue-composition-api (scss)",
+	"Vue SFC-Composition API, SCSS": {
+		"prefix": ["vue-sfc-scss"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -38,7 +38,7 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const ${1:feature} = ref();$0",
+			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
 			"      $1,",
@@ -52,8 +52,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, LESS": {
-		"prefix": "vue-composition-api (less)",
+	"Vue SFC-Composition API, LESS": {
+		"prefix": ["vue-sfc-less"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -66,7 +66,7 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const ${1:feature} = ref();$0",
+			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
 			"      $1,",
@@ -80,8 +80,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, PostCSS": {
-		"prefix": "vue-composition-api (postcss)",
+	"Vue SFC-Composition API, PostCSS": {
+		"prefix": ["vue-sfc-postcss"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -94,7 +94,7 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const ${1:feature} = ref();$0",
+			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
 			"      $1,",
@@ -108,8 +108,8 @@
 			"</style>"
 		]
 	},
-	"Vue SFC - Composition API, CSS": {
-		"prefix": "vue-composition-api (css)",
+	"Vue SFC-Composition API, CSS": {
+		"prefix": ["vue-sfc-css"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -122,7 +122,7 @@
 			"",
 			"export default {",
 			"  setup() {",
-			"    const ${1:feature} = ref();$0",
+			"    const ${1:feature} = ref($2);$0",
 			"",
 			"    return {",
 			"      $1,",
@@ -136,8 +136,8 @@
 			"</style>"
 		]
 	},
-	"Composition API: <script>": {
-		"prefix": "vue-composition-api-script",
+	"Composition API <script>": {
+		"prefix": "vue-script",
 		"body": [
 			"<script>",
 			"import { ref } from 'vue';",

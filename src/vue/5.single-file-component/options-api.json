@@ -1,6 +1,6 @@
 {
-	"Vue SFC - Options API": {
-		"prefix": "vue-options-api",
+	"Vue SFC-Options API": {
+		"prefix": ["vue-sfc"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -27,11 +27,10 @@
 			"  },",
 			"};",
 			"</script>"
-		],
-		"description": "Vue Single-File Components (Options API).\n"
+		]
 	},
-	"Vue SFC - Options API, SCSS": {
-		"prefix": "vue-options-api (scss)",
+	"Vue SFC-Options API, SCSS": {
+		"prefix": ["vue-sfc-scss"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -62,11 +61,10 @@
 			"<style lang=\"scss\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Components (Options API) with SCSS.\n"
+		]
 	},
-	"Vue SFC - Options API, LESS": {
-		"prefix": "vue-options-api (less)",
+	"Vue SFC-Options API, LESS": {
+		"prefix": ["vue-sfc-less"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -97,11 +95,10 @@
 			"<style lang=\"less\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Components (Options API) with LESS.\n"
+		]
 	},
-	"Vue SFC - Options API, PostCSS": {
-		"prefix": "vue-options-api (postcss)",
+	"Vue SFC-Options API, PostCSS": {
+		"prefix": ["vue-sfc-postcss"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -132,11 +129,10 @@
 			"<style lang=\"postcss\" scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Components (Options API) with PostCSS.\n"
+		]
 	},
-	"Vue SFC - Options API, CSS": {
-		"prefix": "vue-options-api (css)",
+	"Vue SFC-Options API, CSS": {
+		"prefix": ["vue-sfc-css"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -167,11 +163,10 @@
 			"<style scoped>",
 			"",
 			"</style>"
-		],
-		"description": "Vue Single-File Components (Options API) with CSS.\n"
+		]
 	},
-	"Options API: <script>": {
-		"prefix": "vue-options-api-script",
+	"Options API <script>": {
+		"prefix": "vue-script",
 		"body": [
 			"<script>",
 			"export default {",
@@ -192,7 +187,6 @@
 			"  },",
 			"};",
 			"</script>"
-		],
-		"description": "Vue Script element (Options API).\n"
+		]
 	}
 }

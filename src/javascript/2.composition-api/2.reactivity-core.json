@@ -88,8 +88,7 @@
 			"  },",
 			");",
 			""
-		],
-		"description": ""
+		]
 	},
 	"Composition API: watch(), props, deep": {
 		"prefix": [
@@ -107,8 +106,7 @@
 			"  }",
 			");",
 			""
-		],
-		"description": ""
+		]
 	},
 	"Composition API: watch(), props, immediate": {
 		"prefix": [
@@ -126,8 +124,7 @@
 			"  }",
 			");",
 			""
-		],
-		"description": ""
+		]
 	},
 	"Composition API: watch(), props, deep, immediate": {
 		"prefix": [
@@ -146,13 +143,12 @@
 			"  }",
 			");",
 			""
-		],
-		"description": ""
+		]
 	},
-	"Composition API: watch(), props, immediate, multiple": {
+	"Composition API: watch(), multiple props": {
 		"prefix": [
-			"watch-props-deep-immediate-multiple",
-			"wdim"
+			"watch-props-multiple",
+			"wm"
 		],
 		"body": [
 			"watch(",
@@ -166,7 +162,6 @@
 			"  }",
 			");",
 			""
-		],
-		"description": ""
+		]
 	}
 }

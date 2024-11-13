@@ -1,32 +1,11 @@
 {
-	"Composition API: getCurrentInstance()": {
+	"Composition API: getCurrentInstance": {
 		"prefix": [
-			"getCurrentInstance",
-			"gci"
-		],
-		"body": [
-			"const instance = getCurrentInstance();"
-		],
-		"description": "Composition API.\n`getCurrentInstance` enables access to an internal component instance useful for advanced usages or for library creators.\n"
-	},
-	"Composition API: proxy": {
-		"prefix": [
-			"proxy"
+			"proxy",
+			"gi"
 		],
 		"body": [
 			"const { proxy } = getCurrentInstance();"
-		]
-	},
-	"Vue: proxy.$router": {
-		"prefix": "instance.proxy.$router",
-		"body": [
-			"proxy.\\$router$9"
-		]
-	},
-	"Vue: proxy.$route": {
-		"prefix": "proxy.$route",
-		"body": [
-			"proxy.\\$route"
 		]
 	}
 }

@@ -16,7 +16,7 @@
 	},
 	"Vue - TS with Composition API: <script setup>": {
 		"prefix": [
-			"vue-ts-composition-api-script"
+			"vue-ts-composition-api (script)"
 		],
 		"body": [
 			"<script setup lang=\"ts\">",
