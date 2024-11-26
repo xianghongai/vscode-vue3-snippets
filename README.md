@@ -65,6 +65,8 @@ watch(
 );
 ```
 
+![Watch Property](./art/assets/watch.gif "Watch Property")
+
 To get the above code, you only need to understand it as: <small><em><strong><u style="color: red;">w</u></strong>atch props <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, and then enter `wdi` through VS Code's Suggest Match and press Enter.
 
 想得到上面这一段代码，只需要理解为：<small><em><strong><u style="color: red;">w</u></strong>atch props <strong><u style="color: red;">d</u></strong>eep <strong><u style="color: red;">i</u></strong>mmediate</em></small>, 然后通过 VS Code 自带的联想功能，输入 `wdi` 回车即可。
@@ -80,6 +82,8 @@ property: {
   required: true,
 },
 ```
+
+!["Props"](./art/assets/props.gif "Props")
 
 Same as above...
 
@@ -114,6 +118,14 @@ Recommended editor settings (建议配置编辑器):
 
 ### Single-File Components / 单文件组件
 
+整个 Vue3 系列，语法形式上，将有五大类🤣。
+
+1. Vue2 SFC-Options API
+2. Vue2 SFC-Composition API
+3. Vue2 SFC-Composition API `<script setup>`
+
+![Single-File Components](./art/assets/sfc++.gif "Single-File Components")
+
 The `sfc` prefix generates Vue <strong><u style="color: red;">S</u></strong>ingle-<strong><u style="color: red;">F</u></strong>ile <strong><u style="color: red;">C</u></strong>omponents, Some examples:
 
 通过 `sfc` 前缀触发，包涵大量创建 Vue 单文件组件的代码片段，部分示例如下：
@@ -125,7 +137,6 @@ The `sfc` prefix generates Vue <strong><u style="color: red;">S</u></strong>ingl
 | ![](./art//assets/sfc-options-api.png)                   |
 
 ### Vue Language Blocks / SFC 语法定义
-
 
 The `vue-script` prefix generates `<script>` language block, which contains a variety of API style scripting language blocks.
 
@@ -167,6 +178,10 @@ Full prefix screenshot (Language Blocks) / 完整前缀截图 (SFC 语法定义)
 - <small><em><strong><u style="color: red;">S</u></strong>ymbol</em></small>，
 - <small><em><strong><u style="color: red;">P</u></strong>romise</em></small>。
 
+`props`
+
+![](./art/assets/props.gif)
+
 | Prefix                                   | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                      |
 |------------------------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `props-String` / `ps`                    | `pss`                 | <small><em>property: <strong><u style="color: red;">S</u></strong>tring,</em></small>                                                                                                                                                                                        |
@@ -181,6 +196,27 @@ Full prefix screenshot (Props) / 完整前缀截图:
 
 ### Computed
 
+建议配置 `jsconfig.json` 支持修复自动导入。
+
+```json
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    // ...
+  }
+  // ...
+}
+```
+
+`ref, computed...`
+
+![](./art/assets/state.gif)
+
+`option-data/computed`
+
+![](./art/assets/option-data-computed.gif)
+
 | Prefix                      | VS Code Suggest Match | Snippet                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `computed-property`         | `cp`                  | <small><em><strong><u style="color: red;">p</u></strong>roperty() {<br>&nbsp;&nbsp;return this.property;<br>},</em></small>                                                                                                                                                                                                                                                               |
@@ -194,6 +230,8 @@ The prefix screenshot (Computed) / 前缀截图:
 ![](./art/assets/computed.png)
 
 ### Watch (Composition API)
+
+![](./art/assets/watch.gif)
 
 1. 直接生成 (Prefix)：`wdi` =  <small><em><strong><u style="color: red;">w</u></strong></em>atch-props-<em><strong><u style="color: red;">d</u></strong></em>eep-<em><strong><u style="color: red;">i</u></strong></em>mmediate</small>
 2. 联想匹配 (Suggest Match)：`wps` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>rop<strong><u style="color: red;">s</u></strong></em></small>。
@@ -215,6 +253,8 @@ The prefix screenshot (Watch) / 前缀截图:
 
 ### Watch (Options API)
 
+![](./art/assets/option-watch.gif)
+
 1. 直接生成 (Prefix)：`wp` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty</em></small>。
 2. 联想匹配 (Suggest Match)：`wpdi` = <small><em><strong><u style="color: red;">w</u></strong>atch-<strong><u style="color: red;">p</u></strong>roperty-<strong><u style="color: red;">d</u></strong>eep-<strong><u style="color: red;">i</u></strong>mmediate</em></small>。
 
@@ -230,6 +270,8 @@ The prefix screenshot (Watch) / 前缀截图:
 ![](./art/assets/watch-options-api.png)
 
 ### Lifecycle Hooks (Composition API)
+
+![](./art/assets/lifecyle.gif)
 
 The `on` prefix generates Vue Lifecycle Hooks, Some examples:
 
@@ -256,6 +298,8 @@ The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 
 ### Lifecycle Hooks (Options API)
 
+![](./art/assets/option-lifecyle.gif)
+
 Just `ol*`...
 
 只要**理解** `ol` 是 <small><em><strong><u style="color: red;">O</u></strong>ptions API <strong><u style="color: red;">L</u></strong>ifecycle Hooks</em></small> 的缩写，并**记忆** Vue3 生命周期钩子，然后就能释放你的能量了。
@@ -280,6 +324,18 @@ The prefix screenshot (Lifecycle Hooks) / 前缀截图:
 ![](./art/assets/lifecycle-hooks-options-api.png)
 
 ### Options API
+
+`option-props`
+
+![](./art/assets/option-props.gif)
+
+`option-watch`
+
+![](./art/assets/option-watch.gif)
+
+`option-methods`
+
+![](./art/assets/option-methods.gif)
 
 The `option-` prefix generates Vue Options API Code, Examples:
 
@@ -325,6 +381,7 @@ All instance properties and methods are triggered with the `vm` prefix, such as:
 | `emit`                       | `e`                   | <small><em><strong><u style="color: red;">em</u></strong>it('event-name', param);</em></small>                                                                                      |
 | ...                          |                       |                                                                                                                                                                                     |
 
+![](./art/assets/emit.gif)
 
 Full prefix screenshot (Vue Instance) / 完整前缀截图 (Vue 实例):
 
@@ -391,6 +448,8 @@ The `route-`/`vmroute-` or `router-`/`vmrouter-` prefix generates Vue Router, So
 如果是 Composition API，可通过 `route-` 或 `router-` 前缀触发；
 
 如果是 Options API，可通过 `vmroute-` 或 `vmrouter-` 前缀触发。
+
+![](./art/assets/router.gif)
 
 包涵大量 Vue Router v4.x API 代码片段，部分示例如下：
 
