@@ -61,10 +61,9 @@
 		],
 		"body": [
 			"watch: {",
-			"  ${1:propertyName}(newValue, oldValue) {",
-			"    $2",
-			"  },$0",
-			"},"
+			"  $1",
+			"},",
+			"$0"
 		],
 		"description": "Type: { [key: string]: String | Function | Object | Array}\nString: methodName,\nFunction: handler(val, oldVal),\nObject: {handler(val, oldVal): Function, deep: Boolean, immediate: Boolean},\nArray: [String, Object, Function]\nAn object where keys are expressions to watch and values are the corresponding callbacks. The value can also be a string of a method name, or an Object that contains additional options. The Vue instance will call `$watch()` for each entry in the object at instantiation.\n"
 	},
