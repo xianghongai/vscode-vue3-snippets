@@ -1,6 +1,6 @@
 {
 	"Vue SFC-Options API": {
-		"prefix": ["vue-sfc"],
+		"prefix": ["vue-sfc (Options API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -30,7 +30,7 @@
 		]
 	},
 	"Vue SFC-Options API, SCSS": {
-		"prefix": ["vue-sfc-scss"],
+		"prefix": ["vue-sfc-scss (Options API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -64,7 +64,7 @@
 		]
 	},
 	"Vue SFC-Options API, LESS": {
-		"prefix": ["vue-sfc-less"],
+		"prefix": ["vue-sfc-less (Options API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -98,7 +98,7 @@
 		]
 	},
 	"Vue SFC-Options API, PostCSS": {
-		"prefix": ["vue-sfc-postcss"],
+		"prefix": ["vue-sfc-postcss (Options API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -132,7 +132,7 @@
 		]
 	},
 	"Vue SFC-Options API, CSS": {
-		"prefix": ["vue-sfc-css"],
+		"prefix": ["vue-sfc-css (Options API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -166,7 +166,7 @@
 		]
 	},
 	"Options API <script>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Options API)",
 		"body": [
 			"<script>",
 			"export default {",

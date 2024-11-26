@@ -1,6 +1,6 @@
 {
 	"Vue SFC-Composition API": {
-		"prefix": ["vue-sfc"],
+		"prefix": ["vue-sfc (Composition API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -25,7 +25,7 @@
 		]
 	},
 	"Vue SFC-Composition API, SCSS": {
-		"prefix": ["vue-sfc-scss"],
+		"prefix": ["vue-sfc-scss (Composition API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -53,7 +53,7 @@
 		]
 	},
 	"Vue SFC-Composition API, LESS": {
-		"prefix": ["vue-sfc-less"],
+		"prefix": ["vue-sfc-less (Composition API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -81,7 +81,7 @@
 		]
 	},
 	"Vue SFC-Composition API, PostCSS": {
-		"prefix": ["vue-sfc-postcss"],
+		"prefix": ["vue-sfc-postcss (Composition API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -109,7 +109,7 @@
 		]
 	},
 	"Vue SFC-Composition API, CSS": {
-		"prefix": ["vue-sfc-css"],
+		"prefix": ["vue-sfc-css (Composition API)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -137,7 +137,7 @@
 		]
 	},
 	"Composition API <script>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Composition API)",
 		"body": [
 			"<script>",
 			"import { ref } from 'vue';",

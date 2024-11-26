@@ -1,6 +1,6 @@
 {
 	"Vue SFC-Composition API <script setup>": {
-		"prefix": ["vue-sfc"],
+		"prefix": ["vue-sfc (Composition API <script setup>)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -17,7 +17,7 @@
 		]
 	},
 	"Vue SFC-Composition API <script setup>, SCSS": {
-		"prefix": ["vue-sfc-scss"],
+		"prefix": ["vue-sfc-scss (Composition API <script setup>)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -37,7 +37,7 @@
 		]
 	},
 	"Vue SFC-Composition API <script setup>, LESS": {
-		"prefix": ["vue-sfc-less"],
+		"prefix": ["vue-sfc-less (Composition API <script setup>)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -57,7 +57,7 @@
 		]
 	},
 	"Vue SFC-Composition API <script setup>, PostCSS": {
-		"prefix": ["vue-sfc-postcss"],
+		"prefix": ["vue-sfc-postcss (Composition API <script setup>)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -77,7 +77,7 @@
 		]
 	},
 	"Vue SFC-Composition API <script setup>, CSS": {
-		"prefix": ["vue-sfc-css"],
+		"prefix": ["vue-sfc-css (Composition API <script setup>)"],
 		"body": [
 			"<template>",
 			"  <div>",
@@ -97,7 +97,7 @@
 		]
 	},
 	"Composition API <script setup>": {
-		"prefix": "vue-script",
+		"prefix": "vue-script (Composition API <script setup>)",
 		"body": [
 			"<script setup>",
 			"import { ref } from 'vue';",
